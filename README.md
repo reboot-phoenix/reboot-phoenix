@@ -1,64 +1,81 @@
 <div align="center">
 
-# hey, i'm reboot-phoenix 🔥
+```
+██████╗ ███████╗██████╗  ██████╗  ██████╗ ████████╗    ██████╗ ██╗  ██╗ ██████╗ ███████╗███╗   ██╗██╗██╗  ██╗
+██╔══██╗██╔════╝██╔══██╗██╔═══██╗██╔═══██╗╚══██╔══╝    ██╔══██╗██║  ██║██╔═══██╗██╔════╝████╗  ██║██║╚██╗██╔╝
+██████╔╝█████╗  ██████╔╝██║   ██║██║   ██║   ██║       ██████╔╝███████║██║   ██║█████╗  ██╔██╗ ██║██║ ╚███╔╝ 
+██╔══██╗██╔══╝  ██╔══██╗██║   ██║██║   ██║   ██║       ██╔═══╝ ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║██║ ██╔██╗ 
+██║  ██║███████╗██████╔╝╚██████╔╝╚██████╔╝   ██║       ██║     ██║  ██║╚██████╔╝███████╗██║ ╚████║██║██╔╝ ██╗
+╚═╝  ╚═╝╚══════╝╚═════╝  ╚═════╝  ╚═════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+```
 
-*torn down. rebuilt. always rising.*
+### `torn down. rebuilt. always rising. 🔥`
 
-[![GitHub followers](https://img.shields.io/github/followers/reboot-phoenix?style=flat&color=ff4757&labelColor=1a1a2e)](https://github.com/reboot-phoenix)
-[![Profile views](https://komarev.com/ghpvc/?username=reboot-phoenix&color=ff4757&style=flat)](https://github.com/reboot-phoenix)
+[![GitHub followers](https://img.shields.io/github/followers/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117&label=followers)](https://github.com/reboot-phoenix)
+[![Profile views](https://komarev.com/ghpvc/?username=reboot-phoenix&color=ff6b35&style=flat-square&label=profile+views)](https://github.com/reboot-phoenix)
+[![GitHub User's stars](https://img.shields.io/github/stars/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117)](https://github.com/reboot-phoenix)
 
 </div>
 
 ---
 
-### 🧠 about me
+```python
+class RebootPhoenix:
+    def __init__(self):
+        self.name       = "reboot-phoenix"
+        self.languages  = ["Python", "TypeScript"]
+        self.philosophy = "if it ain't broken, make it faster"
+        self.status     = "always building something"
 
-I build things, break them, and build them better. Python and TypeScript are my weapons of choice — whether it's writing clean backend logic or pushing a TypeScript project to its limits.
-
-- 🔭 Currently working on **[ghosttrace](https://github.com/reboot-phoenix/ghosttrace)** & **[pyrunner-apex](https://github.com/reboot-phoenix/pyrunner-apex)**
-- 🛠️ Obsessed with writing tools that *actually work*
-- ⚡ Philosophy: if it ain't broken, make it faster
-
----
-
-### 🛠️ tech stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+    def rise_from_ashes(self):
+        while True:
+            build() → break() → rebuild_better()
+```
 
 ---
-
-### 📌 featured projects
-
-| project | what it does | lang |
-|---|---|---|
-| [ghosttrace](https://github.com/reboot-phoenix/ghosttrace) | 👻 *Add a short description here* | Python |
-| [python-toolkit](https://github.com/reboot-phoenix/python-toolkit) | 🧰 *Add a short description here* | Python |
-| [pyrunner-apex](https://github.com/reboot-phoenix/pyrunner-apex) | ⚡ *Add a short description here* | TypeScript |
-
----
-
-### 📊 github stats
 
 <div align="center">
 
-![reboot-phoenix's GitHub stats](https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+### 🛠 stack
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=tokyonight&hide_border=true)
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
+![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
+![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
 
 </div>
 
 ---
+
+### 📁 projects
+
+> **[ghosttrace](https://github.com/reboot-phoenix/ghosttrace)** `Python`
+> 👻 *(add your description — make it sound dangerous)*
+
+> **[python-toolkit](https://github.com/reboot-phoenix/python-toolkit)** `Python`
+> 🧰 *(the toolkit you didn't know you needed)*
+
+> **[pyrunner-apex](https://github.com/reboot-phoenix/pyrunner-apex)** `TypeScript`
+> ⚡ *(apex. the name says enough)*
+
+---
+
+<div align="center">
+
+### 📊 stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=ff6b35&icon_color=ff6b35&text_color=c9d1d9&bg_color=0d1117" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=ff6b35&text_color=c9d1d9&bg_color=0d1117" height="160"/>
 
 ### 🔥 streak
 
-<div align="center">
+[![GitHub Streak](https://streak-stats.demolab.com?user=reboot-phoenix&theme=dark&hide_border=true&fire=ff6b35&ring=ff6b35&currStreakLabel=ff6b35&background=0d1117)](https://git.io/streak-stats)
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=reboot-phoenix&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+### 🐍 contribution snake
+
+![snake gif](https://github.com/reboot-phoenix/reboot-phoenix/blob/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
@@ -66,6 +83,6 @@ I build things, break them, and build them better. Python and TypeScript are my 
 
 <div align="center">
 
-*"Every system crash is just a forced reboot."*
+`// every system crash is just a forced reboot`
 
 </div>
