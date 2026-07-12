@@ -1,19 +1,17 @@
 <div align="center">
 
 ```
-██████╗ ███████╗██████╗  ██████╗  ██████╗ ████████╗    ██████╗ ██╗  ██╗ ██████╗ ███████╗███╗   ██╗██╗██╗  ██╗
-██╔══██╗██╔════╝██╔══██╗██╔═══██╗██╔═══██╗╚══██╔══╝    ██╔══██╗██║  ██║██╔═══██╗██╔════╝████╗  ██║██║╚██╗██╔╝
-██████╔╝█████╗  ██████╔╝██║   ██║██║   ██║   ██║       ██████╔╝███████║██║   ██║█████╗  ██╔██╗ ██║██║ ╚███╔╝ 
-██╔══██╗██╔══╝  ██╔══██╗██║   ██║██║   ██║   ██║       ██╔═══╝ ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║██║ ██╔██╗ 
-██║  ██║███████╗██████╔╝╚██████╔╝╚██████╔╝   ██║       ██║     ██║  ██║╚██████╔╝███████╗██║ ╚████║██║██╔╝ ██╗
-╚═╝  ╚═╝╚══════╝╚═════╝  ╚═════╝  ╚═════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+  _______ / /  ___  ___  / /________  / /  ___  ___ ___  (_)_ __
+ / __/ -_) _ \/ _ \/ _ \/ __/___/ _ \/ _ \/ _ \/ -_) _ \/ /\ \ /
+/_/  \__/_.__/\___/\___/\__/   / .__/_//_/\___/\__/_//_/_//_\_\ 
+                               /_/                               
 ```
-
-### `torn down. rebuilt. always rising. 🔥`
 
 [![GitHub followers](https://img.shields.io/github/followers/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117&label=followers)](https://github.com/reboot-phoenix)
 [![Profile views](https://komarev.com/ghpvc/?username=reboot-phoenix&color=ff6b35&style=flat-square&label=profile+views)](https://github.com/reboot-phoenix)
 [![GitHub User's stars](https://img.shields.io/github/stars/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117)](https://github.com/reboot-phoenix)
+
+`torn down. rebuilt. always rising. 🔥`
 
 </div>
 
@@ -66,12 +64,7 @@ class RebootPhoenix:
 
 ### 📊 stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=ff6b35&icon_color=ff6b35&text_color=c9d1d9&bg_color=0d1117" height="160"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=ff6b35&text_color=c9d1d9&bg_color=0d1117" height="160"/>
-
-### 🔥 streak
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=reboot-phoenix&theme=dark&hide_border=true&fire=ff6b35&ring=ff6b35&currStreakLabel=ff6b35&background=0d1117)](https://git.io/streak-stats)
+![Activity Graph](https://github-activity-graph.vercel.app/graph?username=reboot-phoenix&theme=github-compact&hide_border=true&color=ff6b35&line=ff6b35&point=ffffff&bg_color=0d1117)
 
 ### 🐍 contribution snake
 
