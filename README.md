@@ -1,17 +1,6 @@
 <div align="center">
 
-```
-  _______ / /  ___  ___  / /________  / /  ___  ___ ___  (_)_ __
- / __/ -_) _ \/ _ \/ _ \/ __/___/ _ \/ _ \/ _ \/ -_) _ \/ /\ \ /
-/_/  \__/_.__/\___/\___/\__/   / .__/_//_/\___/\__/_//_/_//_\_\ 
-                               /_/                               
-```
-
-[![GitHub followers](https://img.shields.io/github/followers/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117&label=followers)](https://github.com/reboot-phoenix)
-[![Profile views](https://komarev.com/ghpvc/?username=reboot-phoenix&color=ff6b35&style=flat-square&label=profile+views)](https://github.com/reboot-phoenix)
-[![GitHub User's stars](https://img.shields.io/github/stars/reboot-phoenix?style=flat-square&color=ff6b35&labelColor=0d1117)](https://github.com/reboot-phoenix)
-
-`torn down. rebuilt. always rising. 🔥`
+![Header](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=600&lines=reboot-phoenix+%F0%9F%94%A5;torn+down.+rebuilt.+always+rising.;if+it+ain%27t+broken%2C+make+it+faster.)
 
 </div>
 
