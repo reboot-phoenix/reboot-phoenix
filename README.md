@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=7EB8F7&center=true&vCenter=true&width=700&lines=Dithsa+Dutta+%2F+reboot-phoenix;Cybersecurity+%2B+Python+Developer;B.Sc.+IT+%7C+Techno+India+University;GPA+9.64+%E2%80%94+Class+Topper;i+break+systems+to+understand+them.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=7EB8F7&center=true&vCenter=true&width=700&lines=hey%2C+i'm+Ashtid+D.;Cybersecurity+%2B+Python+Developer;B.Sc.+IT+%7C+Techno+India+University;9.64+GPA+%7C+Class+Rep+%7C+Top+of+class;i+break+systems+to+understand+them.)](https://git.io/typing-svg)
 
 </div>
 
@@ -8,9 +8,10 @@
 
 <div align="center">
 
-| 🎓 GPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships |
-|:---:|:---:|:---:|:---:|
-| **9.64 / 10** | **4** | **10+** | **2 Active** |
+![GPA](https://img.shields.io/badge/GPA-9.64%20%2F%2010-7EB8F7?style=for-the-badge&labelColor=0d1117)
+![Projects](https://img.shields.io/badge/Live%20Projects-4-a78bfa?style=for-the-badge&labelColor=0d1117)
+![Certs](https://img.shields.io/badge/Certifications-10%2B-5eead4?style=for-the-badge&labelColor=0d1117)
+![Internships](https://img.shields.io/badge/Internships-2%20Active-f97316?style=for-the-badge&labelColor=0d1117)
 
 </div>
 
@@ -19,23 +20,23 @@
 ## `$ whoami`
 
 ```python
-class DithsaDutta:
-    name        = "Dithsa Dutta"
+class AshtidD:
     alias       = "reboot-phoenix"
-    location    = "Kolkata, India 🇮🇳"
-    education   = "B.Sc. IT (Cloud Technology & Information Security) · Techno India University"
-    semester    = "Sem 5 of 8 · GPA: 9.64 · Class Topper"
+    location    = "India 🇮🇳"
+    education   = "B.Sc. IT (Cloud Technology & Information Security)"
+                  # Techno India University · Sem 5 of 8
+    standing    = "9.64 GPA · Rank 1 in class · Class Representative"
 
     internships = [
         "Cybersecurity Intern @ UptoSkills (Jun–Sep 2026)",
-        "AI & Sustainability Virtual Intern @ 1M1B × IBM SkillsBuild × AITCE (Active)",
+        "AI & Sustainability Virtual Intern @ 1M1B × IBM SkillsBuild × AITCE",
     ]
 
     currently   = [
-        "web app pentesting with Burp Suite Pro (SQLi, HTTP traffic analysis)",
-        "network recon: Nmap + Nikto on live targets, WAF fingerprinting",
+        "web app pentesting — Burp Suite Pro, SQLi, HTTP traffic analysis",
+        "network recon — Nmap + Nikto on live targets, WAF fingerprinting",
         "shipping live products end-to-end — 4 deployed, more incoming",
-        "grinding DSA in C + CS50x for placement at TCS / Infosys / Tech Mahindra",
+        "grinding DSA in C + CS50x",
     ]
 
     philosophy  = "break systems to understand them. build them to last."
@@ -45,16 +46,16 @@ class DithsaDutta:
 
 ## 🔐 Cybersecurity
 
-> Currently doing **real pentesting on real targets** — not CTFs, not sandboxes.
+> Real pentesting. Real targets. Not CTFs, not sandboxes.
 
-**@ UptoSkills (Active Internship)**
-- Web application vulnerability assessments using **Burp Suite Pro** — intercepting, manipulating, and analysing live HTTP traffic
-- **SQL injection** exploit chains on designated test environments — database enumeration, credential extraction, remediation documentation
-- **Nmap** host discovery, port enumeration, OS & service fingerprinting across target networks
-- **Nikto** web scanning — full vulnerability scans against live domains and subdomains; documented Cloudflare WAF behavior causing early error-limit triggers
-- Formal pentest reports written to professional academic standard for every task
+**@ UptoSkills — Active Internship**
+- Web app vulnerability assessments using **Burp Suite Pro** — intercepting, manipulating & analysing live HTTP traffic
+- **SQL injection** exploit chains on designated test environments — database enumeration, credential extraction, remediation docs
+- **Nmap** host discovery, port enumeration, OS & service fingerprinting across live networks
+- **Nikto** web scanning against live domains and subdomains; documented Cloudflare WAF behavior triggering early error-limits
+- Formal pentest reports written to professional standard for every assessment task
 
-**Tools I actually use:**
+**Toolset:**
 
 ![Burp Suite Pro](https://img.shields.io/badge/Burp_Suite_Pro-0d1117?style=for-the-badge&logo=portswigger&logoColor=FF6633)
 ![Nmap](https://img.shields.io/badge/Nmap-0d1117?style=for-the-badge&logo=nmap&logoColor=7EB8F7)
@@ -66,7 +67,7 @@ class DithsaDutta:
 
 ---
 
-## 💻 Languages & Tech Stack
+## 💻 Tech Stack
 
 ### Languages
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
@@ -98,54 +99,53 @@ class DithsaDutta:
 
 ## 🚀 Projects
 
-### 🌐 [IT Study Hub](https://itstudyhub.dpdns.org) — *Live EdTech Platform*
-> Led a 4-person team from design to deployment. **Zero frameworks. Entirely vanilla JS.**
+### 🌐 [IT Study Hub](https://itstudyhub.dpdns.org) — *Full-stack EdTech Platform*
+> Led a 4-person team from design to deployment. Zero frameworks. Entirely vanilla JS.
 
 `HTML/CSS/JS` · `Firebase Auth` · `Monaco Editor` · `Judge0 CE` · `Cloudflare DNS` · `GitHub Pages`
 
-- Gamified XP & badge progression, real-time leaderboard, subject quizzes (8+ subjects, 25 questions each), tiered premium access
-- In-browser code execution via Monaco Editor + Judge0 CE; custom SVG assets throughout; Firebase Auth for user management
-- Deployed on GitHub Pages with Cloudflare DNS — live at **[itstudyhub.dpdns.org](https://itstudyhub.dpdns.org)**
+- Gamified XP & badge system, real-time leaderboard, 8+ subject quizzes (25 questions each), tiered premium access
+- In-browser code execution via Monaco Editor + Judge0 CE; Firebase Auth for user management
+- Live at **[itstudyhub.dpdns.org](https://itstudyhub.dpdns.org)**
 
 ---
 
 ### ⚡ [PyRunner Apex](https://pyrunner-apex.itstudyhub-tiu.workers.dev) — *Browser-native Python IDE*
-> Full Python 3.11 in the browser via WebAssembly. Zero backend. Zero compromise.
+> Full Python 3.11 in the browser via WebAssembly. Zero backend.
 
 `React` · `TypeScript` · `Pyodide` · `WebAssembly` · `Cloudflare Workers` · `Bun`
 
-- Monaco editor with inline error highlighting; interactive `input()` support; auto-imports for NumPy & Pandas; multi-file tab system
+- Monaco editor with inline error highlighting; interactive `input()` support; auto-imports for NumPy & Pandas; multi-file tabs
 - Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys
-- Deployed via Bun + Cloudflare Workers CI/CD pipeline
+- Deployed via Bun + Cloudflare Workers CI/CD
 
 ---
 
 ### 👻 [ghosttrace](https://github.com/reboot-phoenix/ghosttrace) — *Network Recon Tool*
-> Silent. Efficient. Does exactly what it says.
 
-`Python`
+`Python` — silent, efficient, does exactly what it says.
 
 ---
 
 ### 🔑 [python-toolkit](https://github.com/reboot-phoenix/python-toolkit) — *CLI Password Manager*
-> OWASP-compliant cryptography — nothing stored in plaintext. Ever.
+> OWASP-compliant cryptography. Nothing stored in plaintext. Ever.
 
 `Python` · `Fernet AES-128-CBC` · `PBKDF2-HMAC-SHA256` · `pytest`
 
-- Master password never stored — PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); salt stored separately from vault
-- Full pytest suite: **32 passing tests** across all modules
+- PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); master password never stored; salt stored separately from vault
+- **32 passing tests** across all modules
 
 ---
 
 ## 🏢 Internships & Simulations
 
-| Organisation | Role | Type | Period |
-|---|---|---|---|
-| **UptoSkills** | Cybersecurity Intern | In-person | Jun–Sep 2026 |
-| **1M1B × IBM SkillsBuild × AITCE** | AI & Sustainability Virtual Intern | Virtual | Active |
-| **Mastercard · Forage** | Cybersecurity Analyst Simulation | Virtual | Mar 2026 |
-| **Deloitte Australia · Forage** | Cyber Security Consultant Simulation | Virtual | Mar 2026 |
-| **TCS · Forage** | Data Visualisation Analyst Simulation | Virtual | Mar 2026 |
+| Organisation | Role | Period |
+|---|---|---|
+| **UptoSkills** | Cybersecurity Intern | Jun–Sep 2026 |
+| **1M1B × IBM SkillsBuild × AITCE** | AI & Sustainability Virtual Intern | Active |
+| **Mastercard · Forage** | Cybersecurity Analyst Simulation | Mar 2026 |
+| **Deloitte Australia · Forage** | Cyber Security Consultant Simulation | Mar 2026 |
+| **TCS · Forage** | Data Visualisation Analyst Simulation | Mar 2026 |
 
 ---
 
@@ -171,27 +171,11 @@ class DithsaDutta:
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <div align="center">
-
-![reboot-phoenix's GitHub stats](https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117)
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7)](https://git.io/streak-stats)
 
 [![Activity Graph](https://github-activity-graph.vercel.app/graph?username=reboot-phoenix&theme=github-compact&hide_border=true&color=7EB8F7&line=7EB8F7&point=ffffff&bg_color=0d1117)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-![snake gif](https://github.com/reboot-phoenix/reboot-phoenix/raw/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
@@ -202,7 +186,6 @@ class DithsaDutta:
 <div align="center">
 
 [![Email](https://img.shields.io/badge/bscit.tiu2012@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:bscit.tiu2012@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-dithsa--dutta-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/dithsa-dutta)
 [![Portfolio](https://img.shields.io/badge/Portfolio-itstudyhub.dpdns.org-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=7EB8F7)](https://itstudyhub.dpdns.org)
 [![LeetCode](https://img.shields.io/badge/LeetCode-just--started--coding-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/just-started-coding)
 
