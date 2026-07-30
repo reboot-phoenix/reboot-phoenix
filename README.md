@@ -24,7 +24,7 @@ class AshtidD:
     alias       = "reboot-phoenix"
     location    = "India 🇮🇳"
     education   = "B.Sc. IT — Cloud Technology & Information Security"
-                  # Techno India University · Sem 5 of 8
+                  # Techno India University · Final Years
     standing    = "9.64 GPA · Rank 1 in class · Class Representative"
 
     internships = [
@@ -147,10 +147,10 @@ class AshtidD:
 <div align="center">
 
 <a href="https://github.com/reboot-phoenix">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
 </a>
 <a href="https://github.com/reboot-phoenix">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
 </a>
 
 <br/><br/>
