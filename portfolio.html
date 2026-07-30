@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dithsa Dutta — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg:           #0b0d12;
+      --bg-2:         #10131a;
+      --surface:      rgba(255,255,255,0.04);
+      --surface-h:    rgba(255,255,255,0.07);
+      --border:       rgba(255,255,255,0.07);
+      --border-h:     rgba(126,184,247,0.35);
+      --ink:          #e8eaf0;
+      --muted:        #7a8090;
+      --muted-2:      #454a57;
+      --accent:       #7eb8f7;
+      --accent-dim:   rgba(126,184,247,0.12);
+      --accent-glow:  rgba(126,184,247,0.22);
+      --violet:       #a78bfa;
+      --violet-dim:   rgba(167,139,250,0.12);
+      --green:        #5eead4;
+      --green-dim:    rgba(94,234,212,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Subtle background texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 10%, rgba(126,184,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(167,139,250,0.05) 0%, transparent 55%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ═══ NAV ═══ */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      background: rgba(11,13,18,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .nav-links a { color: var(--muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ink); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      background: var(--accent-dim);
+      border: 1px solid rgba(126,184,247,0.25);
+      border-radius: 6px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .nav-cta:hover { background: rgba(126,184,247,0.18); border-color: rgba(126,184,247,0.45); }
+
+    /* ═══ LAYOUT ═══ */
+    .outer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    section { padding: clamp(5rem, 8vh, 7rem) 0; }
+
+    .section-divider {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      position: relative;
+      z-index: 1;
+    }
+    .section-divider hr {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.12;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 3rem;
+    }
+
+    /* ═══ HERO ═══ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 58px;
+    }
+
+    #hero .outer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .hero-label::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--muted-2);
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3rem, 6.5vw, 5.4rem);
+      font-weight: 700;
+      line-height: 1.0;
+      color: var(--ink);
+      white-space: nowrap;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-cursor {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      background: var(--accent);
+      vertical-align: middle;
+      margin-left: 4px;
+      animation: blink 1.1s step-end infinite;
+      border-radius: 1px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .hero-role {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+      font-weight: 400;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-bio {
+      font-size: 0.97rem;
+      color: var(--muted);
+      line-height: 1.85;
+      max-width: 520px;
+      margin-bottom: 2.4rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.6rem;
+      background: var(--accent);
+      color: #0b0d12;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border-radius: 8px;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      border-radius: 8px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.2); background: var(--surface-h); }
+
+    .btn-cv {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      background: var(--violet-dim);
+      border: 1px solid rgba(167,139,250,0.25);
+      color: var(--violet);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      border-radius: 8px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-cv:hover { background: rgba(167,139,250,0.2); border-color: rgba(167,139,250,0.45); }
+
+    /* Hero stats card */
+    .hero-stats {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      min-width: 220px;
+    }
+
+    .stat-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .stat-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+    .stat-value .accent { color: var(--accent); }
+    .stat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.63rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .stat-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.8rem;
+      background: rgba(94,234,212,0.1);
+      border: 1px solid rgba(94,234,212,0.2);
+      border-radius: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-top: 0.5rem;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse-dot 2s ease infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(94,234,212,0.4); }
+      50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(94,234,212,0); }
+    }
+
+    /* ═══ ABOUT / INTERNSHIP ═══ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .glass-card {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.8rem;
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .glass-card:hover {
+      border-color: var(--border-h);
+      background: var(--surface-h);
+    }
+
+    .card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.63rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .card-body {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .card-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: 0.8rem;
+    }
+    .card-bullets li {
+      font-size: 0.86rem;
+      color: var(--muted);
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.7;
+    }
+    .card-bullets li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .active-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(94,234,212,0.1);
+      border: 1px solid rgba(94,234,212,0.2);
+      border-radius: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+    }
+    .active-badge::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    /* skills grid */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .skill-tag:hover { border-color: rgba(126,184,247,0.3); color: var(--ink); }
+
+    /* ═══ PROJECTS ═══ */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .proj-card {
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 4px 1fr;
+      transition: border-color 0.25s;
+    }
+    .proj-card:hover { border-color: var(--border-h); }
+
+    .proj-accent-bar {
+      background: linear-gradient(180deg, var(--accent) 0%, rgba(126,184,247,0.3) 100%);
+      transition: background 0.25s;
+    }
+    .proj-card:nth-child(2) .proj-accent-bar {
+      background: linear-gradient(180deg, var(--violet) 0%, rgba(167,139,250,0.3) 100%);
+    }
+    .proj-card:nth-child(3) .proj-accent-bar {
+      background: linear-gradient(180deg, var(--green) 0%, rgba(94,234,212,0.3) 100%);
+    }
+    .proj-card:nth-child(4) .proj-accent-bar {
+      background: linear-gradient(180deg, #f97316 0%, rgba(249,115,22,0.3) 100%);
+    }
+
+    .proj-inner {
+      padding: 1.8rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .proj-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.6rem;
+    }
+
+    .proj-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .proj-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.9rem;
+    }
+    .proj-tag {
+      display: inline-block;
+      padding: 0.22rem 0.6rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.66rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .proj-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+
+    .proj-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .proj-bullets li {
+      font-size: 0.84rem;
+      color: var(--muted-2);
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.7;
+    }
+    .proj-bullets li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--muted-2);
+      font-size: 0.7rem;
+      top: 0.15em;
+    }
+
+    .proj-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: flex-end;
+    }
+
+    .proj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      background: var(--surface-h);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-size: 0.74rem;
+      font-weight: 500;
+      color: var(--muted);
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .proj-link:hover { color: var(--ink); border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); }
+    .proj-link svg { flex-shrink: 0; }
+
+    .proj-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent);
+      opacity: 0.7;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ═══ SIMULATIONS ═══ */
+    .forage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .forage-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.4rem;
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .forage-card:hover { border-color: var(--border-h); background: var(--surface-h); }
+
+    .f-company {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .f-role {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+    }
+
+    .f-date {
+      font-size: 0.78rem;
+      color: var(--muted-2);
+      margin-bottom: 0.9rem;
+    }
+
+    .f-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    /* ═══ CERTS ═══ */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .cert-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .cert-group-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: 0.01em;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0.2rem;
+    }
+
+    .cert-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .cert-name {
+      font-size: 0.84rem;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .cert-issuer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted-2);
+      letter-spacing: 0.04em;
+    }
+
+    /* ═══ CONTACT ═══ */
+    #contact {
+      text-align: center;
+    }
+    #contact h2, #contact .eyebrow { justify-content: center; }
+    .contact-sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 440px;
+      margin: 0 auto 2.5rem;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .contact-pill:hover {
+      color: var(--ink);
+      border-color: rgba(126,184,247,0.3);
+      background: var(--surface-h);
+    }
+
+    /* ═══ FOOTER ═══ */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--muted-2);
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    footer a { color: var(--muted-2); transition: color 0.2s; }
+    footer a:hover { color: var(--muted); }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 900px) {
+      #hero .outer { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: row; flex-wrap: wrap; min-width: unset; }
+      .about-grid { grid-template-columns: 1fr; }
+      .forage-grid { grid-template-columns: 1fr 1fr; }
+      .cert-grid { grid-template-columns: 1fr 1fr; }
+      .proj-inner { grid-template-columns: 1fr; }
+      .proj-links { flex-direction: row; align-items: center; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      h1 { white-space: normal; }
+      .forage-grid { grid-template-columns: 1fr; }
+      .cert-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-cursor, .hero-badge::before { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">D.<span>Dutta</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.linkedin.com/in/dithsa-dutta" target="_blank">LinkedIn</a></li>
+  </ul>
+  <a href="mailto:bscit.tiu2012@gmail.com" class="nav-cta">
+    <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    Hire me
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="outer">
+    <div class="hero-left">
+      <div class="hero-label">B.Sc. IT · Techno India University · Kolkata</div>
+      <h1>Dithsa Dutta<span class="hero-cursor"></span></h1>
+      <div class="hero-role">Cybersecurity &amp; Python Developer</div>
+      <p class="hero-bio">Third-year IT student specialising in Cloud Technology and Information Security. Currently interning as a Cybersecurity Intern at Uptoskills — conducting real-world vulnerability assessments with Burp Suite Pro. Independently shipped four live products end-to-end.</p>
+      <div class="hero-badge">Available · Open to Opportunities</div>
+      <div class="hero-cta" style="margin-top:2rem;">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          View Projects
+        </a>
+        <a href="CV_D_Dutta.html" download class="btn-cv">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a href="https://github.com/reboot-phoenix" target="_blank" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-value">9<span class="accent">.</span>64</div>
+        <div class="stat-label">Current GPA</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value">4</div>
+        <div class="stat-label">Live Projects</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value">10<span class="accent">+</span></div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Forage Sims</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="outer">
+    <div class="eyebrow">Background</div>
+    <h2>About Me</h2>
+    <p class="section-sub">Pentesting, Python, and building things that actually work — I break systems to understand them and build them to last.</p>
+
+    <div class="about-grid">
+
+      <!-- Internship -->
+      <div class="glass-card" style="grid-column: 1 / -1;">
+        <div class="card-label">Current Position</div>
+        <div class="card-title">
+          Cybersecurity Intern
+          <span class="active-badge">Active</span>
+        </div>
+        <div class="card-meta">Uptoskills · Jun 2026 – Sep 2026</div>
+        <ul class="card-bullets">
+          <li>Hands-on web application vulnerability assessments using Burp Suite Pro — intercepting, manipulating, and analysing HTTP traffic to identify security flaws across target environments.</li>
+          <li>Executing SQL injection attacks on designated test sites to enumerate databases, extract credentials, and document exploit chains with remediation notes.</li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <div class="glass-card">
+        <div class="card-label">Education</div>
+        <div class="card-title">B.Sc. Information Technology</div>
+        <div class="card-meta">Techno India University, Kolkata · 2024–2028<br>Cloud Technology &amp; Information Security · Sem 5 of 8</div>
+        <div class="card-body" style="margin-top:0.5rem;">
+          <strong style="color:var(--accent);">GPA: 9.64</strong>
+          <br/><br/>
+          Higher Secondary (WBCHSE) · Holy Child Institute, Kolkata · 2024 · 78.20%
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="glass-card">
+        <div class="card-label">Technical Skills</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">HTML / CSS / JS</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Cloudflare</span>
+          <span class="skill-tag">Kali Linux</span>
+          <span class="skill-tag">Burp Suite Pro</span>
+          <span class="skill-tag">Nmap</span>
+          <span class="skill-tag">SQL Injection</span>
+          <span class="skill-tag">OSINT</span>
+          <span class="skill-tag">Pen Testing</span>
+          <span class="skill-tag">Data Visualisation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="outer">
+    <div class="eyebrow">Work</div>
+    <h2>Projects</h2>
+    <p class="section-sub">Four live products, zero frameworks where they weren't needed — built and shipped end-to-end.</p>
+
+    <div class="projects-list">
+
+      <!-- IT Study Hub -->
+      <div class="proj-card">
+        <div class="proj-accent-bar"></div>
+        <div class="proj-inner">
+          <div class="proj-content">
+            <div class="proj-header">
+              <span class="proj-name">IT Study Hub</span>
+            </div>
+            <div class="proj-url">itstudyhub.dpdns.org</div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML / CSS / JS</span>
+              <span class="proj-tag">Firebase Auth</span>
+              <span class="proj-tag">Monaco Editor</span>
+              <span class="proj-tag">Judge0 CE</span>
+              <span class="proj-tag">Cloudflare DNS</span>
+              <span class="proj-tag">GitHub Pages</span>
+            </div>
+            <p class="proj-desc">Full-stack educational platform — ESD coursework project, led a 4-person team from design to deployment. Zero frameworks, entirely vanilla JS.</p>
+            <ul class="proj-bullets">
+              <li>Firebase Auth, gamified XP &amp; badge progression, real-time leaderboard, subject quizzes, and tiered premium access.</li>
+              <li>Deployed on GitHub Pages with Cloudflare DNS; integrated Monaco Editor + Judge0 CE for in-browser code execution.</li>
+            </ul>
+          </div>
+          <div class="proj-links">
+            <a href="https://www.itstudyhub.dpdns.org" target="_blank" class="proj-link">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PyRunner Apex -->
+      <div class="proj-card">
+        <div class="proj-accent-bar"></div>
+        <div class="proj-inner">
+          <div class="proj-content">
+            <div class="proj-header">
+              <span class="proj-name">PyRunner Apex</span>
+            </div>
+            <div class="proj-url">pyrunner-apex.itstudyhub-tiu.workers.dev</div>
+            <div class="proj-stack">
+              <span class="proj-tag">React</span>
+              <span class="proj-tag">TypeScript</span>
+              <span class="proj-tag">Pyodide</span>
+              <span class="proj-tag">WebAssembly</span>
+              <span class="proj-tag">Cloudflare Workers</span>
+              <span class="proj-tag">Bun</span>
+            </div>
+            <p class="proj-desc">Browser-native Python 3.11 IDE via Pyodide (WebAssembly CPython) — zero backend. Interactive <code style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--accent);background:var(--accent-dim);padding:1px 5px;border-radius:3px;">input()</code>, auto-package imports, multi-file tabs.</p>
+            <ul class="proj-bullets">
+              <li>Monaco editor with inline error highlighting; auto-imports for NumPy, Pandas; multi-file tab system.</li>
+              <li>Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys; deployed via Bun + Cloudflare Workers CI/CD.</li>
+            </ul>
+          </div>
+          <div class="proj-links">
+            <a href="https://pyrunner-apex.itstudyhub-tiu.workers.dev" target="_blank" class="proj-link">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GhostTrace -->
+      <div class="proj-card">
+        <div class="proj-accent-bar"></div>
+        <div class="proj-inner">
+          <div class="proj-content">
+            <div class="proj-header">
+              <span class="proj-name">GhostTrace</span>
+            </div>
+            <div class="proj-url">ghosttrace-iy8f.onrender.com</div>
+            <div class="proj-stack">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Flask</span>
+              <span class="proj-tag">Vanilla JS</span>
+              <span class="proj-tag">SerpAPI</span>
+              <span class="proj-tag">LeakCheck</span>
+              <span class="proj-tag">HIBP</span>
+            </div>
+            <p class="proj-desc">OSINT web app that aggregates a target's digital footprint — attacker recon methodology applied defensively.</p>
+            <ul class="proj-bullets">
+              <li>Name, email, phone, username search via SerpAPI → Google CSE → DuckDuckGo fallback; breach lookup via LeakCheck &amp; HIBP; Gravatar &amp; social deep-links.</li>
+              <li>0–100 exposure score with animated ring, per-platform profile verification, scan history, and exportable report.</li>
+            </ul>
+          </div>
+          <div class="proj-links">
+            <a href="https://ghosttrace-iy8f.onrender.com" target="_blank" class="proj-link">
+              <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live
+            </a>
+            <a href="https://github.com/reboot-phoenix/ghosttrace" target="_blank" class="proj-link">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Python Toolkit -->
+      <div class="proj-card">
+        <div class="proj-accent-bar"></div>
+        <div class="proj-inner">
+          <div class="proj-content">
+            <div class="proj-header">
+              <span class="proj-name">Python Toolkit</span>
+            </div>
+            <div class="proj-url">github.com/reboot-phoenix/python-toolkit</div>
+            <div class="proj-stack">
+              <span class="proj-tag">Python 3.12</span>
+              <span class="proj-tag">Fernet AES-128-CBC</span>
+              <span class="proj-tag">PBKDF2-HMAC-SHA256</span>
+              <span class="proj-tag">pytest</span>
+            </div>
+            <p class="proj-desc">CLI password manager with serious cryptography — OWASP-compliant key derivation, 32 passing tests, nothing stored in plaintext.</p>
+            <ul class="proj-bullets">
+              <li>Fernet AES-128-CBC encryption; master password never stored — PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); salt stored separately from vault.</li>
+              <li>Bundled terminal game (dataclasses) and utility library; full pytest suite (32 tests) validates all modules.</li>
+            </ul>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/reboot-phoenix/python-toolkit" target="_blank" class="proj-link">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- SIMULATIONS -->
+<section id="simulations">
+  <div class="outer">
+    <div class="eyebrow">Professional Simulations</div>
+    <h2>Forage</h2>
+    <p class="section-sub">Industry-grade virtual job simulations with real deliverables.</p>
+    <div class="forage-grid">
+      <div class="forage-card">
+        <div class="f-company">Mastercard · Forage</div>
+        <div class="f-role">Cybersecurity Analyst</div>
+        <div class="f-date">Mar 2026</div>
+        <div class="f-desc">Triaged phishing campaigns; identified security awareness gaps and proposed targeted training interventions.</div>
+      </div>
+      <div class="forage-card">
+        <div class="f-company">Deloitte Australia · Forage</div>
+        <div class="f-role">Cyber Security Consultant</div>
+        <div class="f-date">Mar 2026</div>
+        <div class="f-desc">Analysed web activity logs to isolate a compromised account; documented findings for the client.</div>
+      </div>
+      <div class="forage-card">
+        <div class="f-company">TCS · Forage</div>
+        <div class="f-role">Data Visualisation Analyst</div>
+        <div class="f-date">Mar 2026</div>
+        <div class="f-desc">Produced executive-facing data visualisations to support business decision-making at scale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="outer">
+    <div class="eyebrow">Credentials</div>
+    <h2>Certifications</h2>
+    <p class="section-sub">Selected credentials from Cisco, Microsoft, TCS, Deloitte, and Mastercard.</p>
+
+    <div class="cert-grid">
+
+      <div class="cert-group">
+        <div class="cert-group-title">🔐 Cybersecurity</div>
+        <div class="cert-item">
+          <div class="cert-name">Introduction to Cybersecurity</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Describe Concepts of Cryptography</div>
+          <div class="cert-issuer">Microsoft</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Introduction to Microsoft Security Solutions</div>
+          <div class="cert-issuer">Microsoft</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Security, Compliance &amp; Identity Concepts</div>
+          <div class="cert-issuer">Microsoft</div>
+        </div>
+      </div>
+
+      <div class="cert-group">
+        <div class="cert-group-title">💼 Industry Simulations</div>
+        <div class="cert-item">
+          <div class="cert-name">Cyber Job Simulation</div>
+          <div class="cert-issuer">Deloitte (Forage)</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Cybersecurity Job Simulation</div>
+          <div class="cert-issuer">Mastercard (Forage)</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Data Visualisation: Empowering Business with Effective Insights</div>
+          <div class="cert-issuer">TCS (Forage)</div>
+        </div>
+      </div>
+
+      <div class="cert-group">
+        <div class="cert-group-title">💻 Programming &amp; Data</div>
+        <div class="cert-item">
+          <div class="cert-name">Python Essentials 1</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Data Science &amp; Analytics</div>
+          <div class="cert-issuer">HP LIFE</div>
+        </div>
+        <div class="cert-group-title" style="margin-top:1.6rem;">🎓 Professional</div>
+        <div class="cert-item">
+          <div class="cert-name">TCS iON Career Edge — Young Professional</div>
+          <div class="cert-issuer">Tata Consultancy Services</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="outer">
+    <div class="eyebrow" style="justify-content:center;">Contact</div>
+    <h2>Let's connect.</h2>
+    <p class="contact-sub">Open to internships, collaborations, and interesting problems.</p>
+    <div class="contact-links">
+      <a href="mailto:bscit.tiu2012@gmail.com" class="contact-pill">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        bscit.tiu2012@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/dithsa-dutta" target="_blank" class="contact-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/reboot-phoenix" target="_blank" class="contact-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        github.com/reboot-phoenix
+      </a>
+      <a href="https://leetcode.com/just-started-coding" target="_blank" class="contact-pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+        LeetCode
+      </a>
+      <a href="CV_D_Dutta.html" download class="contact-pill" style="border-color:rgba(167,139,250,0.25);color:var(--violet);">
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Dithsa Dutta</span>
+  <span>B.Sc. IT · Techno India University · Kolkata, India</span>
+</footer>
+
+</body>
+</html>
