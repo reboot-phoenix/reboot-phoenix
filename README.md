@@ -103,7 +103,7 @@ class AshtidD:
 
 ## <img src="https://cdn.simpleicons.org/github/7EB8F7" width="22"/> Projects
 
-### 🌐 [IT Study Hub](https://itstudyhub.dpdns.org)
+### 🌐 IT Study Hub
 > Full-stack EdTech platform — led a 4-person team from design to deployment. Zero frameworks. Entirely vanilla JS.
 
 ![HTML](https://img.shields.io/badge/HTML%2FCSS%2FJS-0d1117?style=flat-square&logo=html5&logoColor=E34F26)
@@ -117,9 +117,11 @@ class AshtidD:
 - 8+ subject courses with 25-question quizzes each; in-browser code execution via Monaco + Judge0 CE
 - Firebase Auth for user management; custom SVG assets throughout
 
+[![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://itstudyhub.dpdns.org)
+
 ---
 
-### ⚡ [PyRunner Apex](https://pyrunner-apex.itstudyhub-tiu.workers.dev)
+### ⚡ PyRunner Apex
 > Browser-native Python 3.11 IDE powered by WebAssembly. Zero backend. Zero compromise.
 
 ![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
@@ -133,33 +135,45 @@ class AshtidD:
 - Monaco editor with inline error highlighting; interactive `input()` support; auto-imports for NumPy & Pandas; multi-file tabs
 - Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys; deployed via Bun + Cloudflare Workers CI/CD
 
+[![Live](https://img.shields.io/badge/Live-pyrunner--apex.itstudyhub--tiu.workers.dev-7EB8F7?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pyrunner-apex.itstudyhub-tiu.workers.dev)
+
 ---
 
-### 👻 [ghosttrace](https://github.com/reboot-phoenix/ghosttrace)
+### 👻 ghosttrace
 > Silent network recon tool built in Python. Host discovery, tracing, and enumeration.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 
+[![Live](https://img.shields.io/badge/Live-ghosttrace--iy8f.onrender.com-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace-iy8f.onrender.com)
+[![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fghosttrace-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/ghosttrace)
+
 ---
 
-### 🔑 [python-toolkit](https://github.com/reboot-phoenix/python-toolkit)
+### 🔑 python-toolkit
 > OWASP-compliant CLI password manager. Nothing stored in plaintext. Ever.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 ![Fernet](https://img.shields.io/badge/Fernet_AES--128--CBC-0d1117?style=flat-square&logo=letsencrypt&logoColor=7EB8F7)
-![PBKDF2](https://img.shields.io/badge/PBKDF2--HMAC--SHA256-0d1117?style=flat-square&logo=shield&logoColor=5eead4)
+![PBKDF2](https://img.shields.io/badge/PBKDF2--HMAC--SHA256-0d1117?style=flat-square&logo=springsecurity&logoColor=5eead4)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=flat-square&logo=pytest&logoColor=0A9EDC)
 
 - PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); master password never stored; salt stored separately from vault
 - **32 passing tests** validating all modules
 
+[![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fpython--toolkit-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/python-toolkit)
+
 ---
 
-## <img src="https://cdn.simpleicons.org/linkedin/a78bfa" width="22"/> Virtual Internships & Programmes
+## <img src="https://cdn.simpleicons.org/linkedin/a78bfa" width="22"/> Experience
 
+### Internship
+| Organisation | Role | Period |
+|---|---|---|
+| **UptoSkills** | Cybersecurity Intern | Jun–Sep 2026 |
+
+### Virtual Internships & Programmes
 | Organisation | Role | Type | Period |
 |---|---|---|---|
-| **UptoSkills** | Cybersecurity Intern | Internship | Jun–Sep 2026 |
 | **1M1B × IBM SkillsBuild × AITCE** | AI & Sustainability | Virtual Programme | Active |
 | **Mastercard · Forage** | Cybersecurity Analyst | Virtual Internship | Mar 2026 |
 | **Deloitte Australia · Forage** | Cyber Security Consultant | Virtual Internship | Mar 2026 |
