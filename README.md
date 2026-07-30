@@ -166,11 +166,6 @@ class AshtidD:
 
 ## <img src="https://cdn.simpleicons.org/linkedin/a78bfa" width="22"/> Experience
 
-### Internship
-| Organisation | Role | Period |
-|---|---|---|
-| **UptoSkills** | Cybersecurity Intern | Jun–Sep 2026 |
-
 ### Virtual Internships & Programmes
 | Organisation | Role | Type | Period |
 |---|---|---|---|
