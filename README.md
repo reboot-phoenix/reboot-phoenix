@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=hey%2C+i'm+Ashtid+D.;Cybersecurity+%7C+Python+%7C+Cloud;B.Sc.+IT+%7C+Techno+India+University;9.64+GPA+%7C+Rank+1+%7C+Class+Rep;i+break+systems+to+understand+them.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=Ashtid+D+%E2%80%94+reboot-phoenix;B.Sc.+IT+%7C+Cloud+Technology+%26+Information+Security;Cybersecurity+Intern+%40+UptoSkills;AI+%26+Sustainability+Intern+%40+IBM+SkillsBuild;Rank+1+%7C+9.64+GPA+%7C+Class+Representative;Building+secure+systems+from+the+ground+up.)](https://git.io/typing-svg)
 
 </div>
 
@@ -39,8 +39,6 @@ class AshtidD:
         "shipping live products end-to-end — 4 deployed, more incoming",
         "grinding DSA in C + CS50x",
     ]
-
-    philosophy  = "break systems to understand them. build them to last."
 ```
 
 ---
@@ -55,8 +53,6 @@ class AshtidD:
 - **Nmap** host discovery, port enumeration, OS & service fingerprinting across live networks
 - **Nikto** web scanning against live domains and subdomains; documented Cloudflare WAF behavior triggering early error-limits
 - Formal pentest reports written to professional standard for every assessment task
-
-**Toolset:**
 
 ![Burp Suite Pro](https://img.shields.io/badge/Burp_Suite_Pro-0d1117?style=for-the-badge&logo=portswigger&logoColor=FF6633)
 ![Nmap](https://img.shields.io/badge/Nmap-0d1117?style=for-the-badge&logo=nmap&logoColor=7EB8F7)
@@ -73,7 +69,6 @@ class AshtidD:
 - **Cloudflare Workers** — serverless deployments with CI/CD via Bun
 - **Firebase** — Auth, real-time database, and hosting
 - **GitHub Pages** — static site deployments with custom Cloudflare DNS
-- **Cloudflare DNS** — custom domain routing and proxy configuration
 - **WebAssembly / Pyodide** — running Python 3.11 natively in the browser, zero backend
 
 ![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-0d1117?style=for-the-badge&logo=cloudflare&logoColor=F38020)
@@ -109,41 +104,12 @@ class AshtidD:
 
 ## 🚀 Projects
 
-### 🌐 [IT Study Hub](https://itstudyhub.dpdns.org) — *Full-stack EdTech Platform*
-> Led a 4-person team from design to deployment. Zero frameworks. Entirely vanilla JS.
-
-`HTML/CSS/JS` · `Firebase Auth` · `Monaco Editor` · `Judge0 CE` · `Cloudflare DNS` · `GitHub Pages`
-
-- Gamified XP & badge system, real-time leaderboard, 8+ subject quizzes (25 questions each), tiered premium access
-- In-browser code execution via Monaco Editor + Judge0 CE; Firebase Auth for user management
-- Live at **[itstudyhub.dpdns.org](https://itstudyhub.dpdns.org)**
-
----
-
-### ⚡ [PyRunner Apex](https://pyrunner-apex.itstudyhub-tiu.workers.dev) — *Browser-native Python IDE*
-> Full Python 3.11 in the browser via WebAssembly. Zero backend.
-
-`React` · `TypeScript` · `Pyodide` · `WebAssembly` · `Cloudflare Workers` · `Bun`
-
-- Monaco editor with inline error highlighting; interactive `input()` support; auto-imports for NumPy & Pandas; multi-file tabs
-- Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys
-- Deployed via Bun + Cloudflare Workers CI/CD
-
----
-
-### 👻 [ghosttrace](https://github.com/reboot-phoenix/ghosttrace) — *Network Recon Tool*
-
-`Python` — silent, efficient, does exactly what it says.
-
----
-
-### 🔑 [python-toolkit](https://github.com/reboot-phoenix/python-toolkit) — *CLI Password Manager*
-> OWASP-compliant cryptography. Nothing stored in plaintext. Ever.
-
-`Python` · `Fernet AES-128-CBC` · `PBKDF2-HMAC-SHA256` · `pytest`
-
-- PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); master password never stored; salt stored separately from vault
-- **32 passing tests** across all modules
+| Project | Stack | Description |
+|---|---|---|
+| 🌐 **[IT Study Hub](https://itstudyhub.dpdns.org)** | `HTML/CSS/JS` `Firebase` `Monaco` `Judge0` `Cloudflare` | Full-stack EdTech platform — led 4-person team. Gamified XP, real-time leaderboard, in-browser code execution, 8+ subjects. |
+| ⚡ **[PyRunner Apex](https://pyrunner-apex.itstudyhub-tiu.workers.dev)** | `React` `TypeScript` `Pyodide` `WebAssembly` `Cloudflare Workers` | Browser-native Python 3.11 IDE via WebAssembly. Zero backend. Monaco editor, multi-file tabs, AI assistant panel. |
+| 👻 **[ghosttrace](https://github.com/reboot-phoenix/ghosttrace)** | `Python` | Silent network recon tool. Host discovery, tracing, enumeration. |
+| 🔑 **[python-toolkit](https://github.com/reboot-phoenix/python-toolkit)** | `Python` `Fernet AES` `PBKDF2` `pytest` | OWASP-compliant CLI password manager. 480k iteration key derivation, nothing in plaintext, 32 passing tests. |
 
 ---
 
@@ -161,23 +127,18 @@ class AshtidD:
 
 ## 📜 Certifications
 
-**🔐 Cybersecurity**
-- Introduction to Cybersecurity — *Cisco Networking Academy*
-- Describe Concepts of Cryptography — *Microsoft*
-- Introduction to Microsoft Security Solutions — *Microsoft*
-- Security, Compliance & Identity Concepts — *Microsoft*
-
-**💼 Industry Simulations**
-- Cyber Job Simulation — *Deloitte (Forage)*
-- Cybersecurity Job Simulation — *Mastercard (Forage)*
-- Data Visualisation: Empowering Business with Effective Insights — *TCS (Forage)*
-
-**💻 Programming & Data**
-- Python Essentials 1 — *Cisco Networking Academy*
-- Data Science & Analytics — *HP LIFE*
-
-**🎓 Professional**
-- TCS iON Career Edge — Young Professional — *Tata Consultancy Services*
+| Area | Certification | Issuer |
+|---|---|---|
+| 🔐 Cybersecurity | Introduction to Cybersecurity | Cisco Networking Academy |
+| 🔐 Cybersecurity | Describe Concepts of Cryptography | Microsoft |
+| 🔐 Cybersecurity | Introduction to Microsoft Security Solutions | Microsoft |
+| 🔐 Cybersecurity | Security, Compliance & Identity Concepts | Microsoft |
+| 💼 Simulation | Cyber Job Simulation | Deloitte (Forage) |
+| 💼 Simulation | Cybersecurity Job Simulation | Mastercard (Forage) |
+| 💼 Simulation | Data Visualisation: Empowering Business with Effective Insights | TCS (Forage) |
+| 💻 Programming | Python Essentials 1 | Cisco Networking Academy |
+| 💻 Data | Data Science & Analytics | HP LIFE |
+| 🎓 Professional | TCS iON Career Edge — Young Professional | Tata Consultancy Services |
 
 ---
 
@@ -186,15 +147,16 @@ class AshtidD:
 <div align="center">
 
 <a href="https://github.com/reboot-phoenix">
-  <img src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
+</a>
+<a href="https://github.com/reboot-phoenix">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
 </a>
 
-<a href="https://github.com/reboot-phoenix">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages" />
-</a>
+<br/><br/>
 
 <a href="https://github.com/reboot-phoenix">
-  <img src="https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7" />
 </a>
 
 </div>
@@ -205,8 +167,9 @@ class AshtidD:
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/bscit.tiu2012@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:bscit.tiu2012@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-itstudyhub.dpdns.org-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=7EB8F7)](https://itstudyhub.dpdns.org)
+[![Email](https://img.shields.io/badge/Email-bscit.tiu2012@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:bscit.tiu2012@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-reboot--phoenix.github.io-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=7EB8F7)](https://reboot-phoenix.github.io/portfolio.html)
+[![Website](https://img.shields.io/badge/IT%20Study%20Hub-itstudyhub.dpdns.org-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=a78bfa)](https://itstudyhub.dpdns.org)
 [![LeetCode](https://img.shields.io/badge/LeetCode-just--started--coding-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/just-started-coding)
 
 </div>
@@ -218,8 +181,7 @@ class AshtidD:
 ![Visitor Count](https://komarev.com/ghpvc/?username=reboot-phoenix&color=7EB8F7&style=for-the-badge&label=PROFILE+VIEWS)
 
 ```
-// break systems to understand them.
-// build them to last.
+// Building secure systems from the ground up.
 ```
 
 </div>
