@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=7EB8F7&center=true&vCenter=true&width=700&lines=hey%2C+i'm+Ashtid+D.;Cybersecurity+%2B+Python+Developer;B.Sc.+IT+%7C+Techno+India+University;9.64+GPA+%7C+Class+Rep+%7C+Top+of+class;i+break+systems+to+understand+them.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=hey%2C+i'm+Ashtid+D.;Cybersecurity+%7C+Python+%7C+Cloud;B.Sc.+IT+%7C+Techno+India+University;9.64+GPA+%7C+Rank+1+%7C+Class+Rep;i+break+systems+to+understand+them.)](https://git.io/typing-svg)
 
 </div>
 
@@ -23,7 +23,7 @@
 class AshtidD:
     alias       = "reboot-phoenix"
     location    = "India 🇮🇳"
-    education   = "B.Sc. IT (Cloud Technology & Information Security)"
+    education   = "B.Sc. IT — Cloud Technology & Information Security"
                   # Techno India University · Sem 5 of 8
     standing    = "9.64 GPA · Rank 1 in class · Class Representative"
 
@@ -35,6 +35,7 @@ class AshtidD:
     currently   = [
         "web app pentesting — Burp Suite Pro, SQLi, HTTP traffic analysis",
         "network recon — Nmap + Nikto on live targets, WAF fingerprinting",
+        "cloud deployments — Cloudflare Workers, Firebase, GitHub Pages CI/CD",
         "shipping live products end-to-end — 4 deployed, more incoming",
         "grinding DSA in C + CS50x",
     ]
@@ -67,6 +68,21 @@ class AshtidD:
 
 ---
 
+## ☁️ Cloud & Infrastructure
+
+- **Cloudflare Workers** — serverless deployments with CI/CD via Bun
+- **Firebase** — Auth, real-time database, and hosting
+- **GitHub Pages** — static site deployments with custom Cloudflare DNS
+- **Cloudflare DNS** — custom domain routing and proxy configuration
+- **WebAssembly / Pyodide** — running Python 3.11 natively in the browser, zero backend
+
+![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-0d1117?style=for-the-badge&logo=cloudflare&logoColor=F38020)
+![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=FFCA28)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0d1117?style=for-the-badge&logo=githubpages&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-0d1117?style=for-the-badge&logo=webassembly&logoColor=654FF0)
+
+---
+
 ## 💻 Tech Stack
 
 ### Languages
@@ -79,21 +95,15 @@ class AshtidD:
 ![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572B6)
 
-### Frameworks & Platforms
+### Frameworks & Tools
 ![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=FFCA28)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-0d1117?style=for-the-badge&logo=cloudflare&logoColor=F38020)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-0d1117?style=for-the-badge&logo=webassembly&logoColor=654FF0)
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=339933)
-
-### Tools & Environment
+![Bun](https://img.shields.io/badge/Bun-0d1117?style=for-the-badge&logo=bun&logoColor=FBF0DF)
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
-![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
 ![python-docx](https://img.shields.io/badge/python--docx-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=for-the-badge&logo=pytest&logoColor=0A9EDC)
-![Bun](https://img.shields.io/badge/Bun-0d1117?style=for-the-badge&logo=bun&logoColor=FBF0DF)
 
 ---
 
@@ -171,11 +181,21 @@ class AshtidD:
 
 ---
 
-## 📊 GitHub Activity
+## 📊 GitHub Stats
 
 <div align="center">
 
-[![Activity Graph](https://github-activity-graph.vercel.app/graph?username=reboot-phoenix&theme=github-compact&hide_border=true&color=7EB8F7&line=7EB8F7&point=ffffff&bg_color=0d1117)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<a href="https://github.com/reboot-phoenix">
+  <img src="https://github-readme-stats.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats" />
+</a>
+
+<a href="https://github.com/reboot-phoenix">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=reboot-phoenix&layout=compact&theme=github_dark&hide_border=true&title_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages" />
+</a>
+
+<a href="https://github.com/reboot-phoenix">
+  <img src="https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7" alt="GitHub Streak" />
+</a>
 
 </div>
 
