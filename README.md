@@ -8,10 +8,9 @@
 
 <div align="center">
 
-![GPA](https://img.shields.io/badge/GPA-9.64%20%2F%2010-7EB8F7?style=for-the-badge&labelColor=0d1117)
-![Projects](https://img.shields.io/badge/Live%20Projects-4-a78bfa?style=for-the-badge&labelColor=0d1117)
-![Certs](https://img.shields.io/badge/Certifications-10%2B-5eead4?style=for-the-badge&labelColor=0d1117)
-![Internships](https://img.shields.io/badge/Internships-2%20Active-f97316?style=for-the-badge&labelColor=0d1117)
+| 🎓 GPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships |
+|:---:|:---:|:---:|:---:|
+| **9.64 / 10** | **4** | **10+** | **2 Active** |
 
 </div>
 
@@ -43,7 +42,7 @@ class AshtidD:
 
 ---
 
-## 🔐 Cybersecurity
+## <img src="https://cdn.simpleicons.org/hackthebox/7EB8F7" width="22"/> Cybersecurity
 
 > Real pentesting. Real targets. Not CTFs, not sandboxes.
 
@@ -64,7 +63,7 @@ class AshtidD:
 
 ---
 
-## ☁️ Cloud & Infrastructure
+## <img src="https://cdn.simpleicons.org/cloudflare/F38020" width="22"/> Cloud & Infrastructure
 
 - **Cloudflare Workers** — serverless deployments with CI/CD via Bun
 - **Firebase** — Auth, real-time database, and hosting
@@ -78,7 +77,7 @@ class AshtidD:
 
 ---
 
-## 💻 Tech Stack
+## <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" width="22"/> Tech Stack
 
 ### Languages
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
@@ -102,7 +101,7 @@ class AshtidD:
 
 ---
 
-## 🚀 Projects
+## <img src="https://cdn.simpleicons.org/github/ffffff" width="22"/> Projects
 
 | Project | Stack | Description |
 |---|---|---|
@@ -113,7 +112,7 @@ class AshtidD:
 
 ---
 
-## 🏢 Internships & Simulations
+## <img src="https://cdn.simpleicons.org/briefcase/a78bfa" width="22"/> Internships & Simulations
 
 | Organisation | Role | Period |
 |---|---|---|
@@ -125,7 +124,7 @@ class AshtidD:
 
 ---
 
-## 📜 Certifications
+## <img src="https://cdn.simpleicons.org/googledocs/5eead4" width="22"/> Certifications
 
 | Area | Certification | Issuer |
 |---|---|---|
@@ -142,7 +141,7 @@ class AshtidD:
 
 ---
 
-## 📊 GitHub Stats
+## <img src="https://cdn.simpleicons.org/github/7EB8F7" width="22"/> GitHub Stats
 
 <div align="center">
 
@@ -163,7 +162,7 @@ class AshtidD:
 
 ---
 
-## 📬 Contact
+## <img src="https://cdn.simpleicons.org/gmail/EA4335" width="22"/> Contact
 
 <div align="center">
 
