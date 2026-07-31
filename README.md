@@ -79,32 +79,30 @@ class AshtidD:
 
 ## <img src="https://cdn.simpleicons.org/python/3776AB" width="22"/> Tech Stack
 
-### Languages
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
-![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
-![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
-![C](https://img.shields.io/badge/C-0d1117?style=for-the-badge&logo=c&logoColor=A8B9CC)
-![SQL](https://img.shields.io/badge/SQL-0d1117?style=for-the-badge&logo=mysql&logoColor=4479A1)
-![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572B6)
+<div align="center">
 
-### Frameworks & Tools
-![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=339933)
+[![My Skills](https://skillicons.dev/icons?i=py,js,ts,java,c,html,css,react,nodejs,git,linux,bash,firebase,cloudflare,vscode&theme=dark&perline=8)](https://skillicons.dev)
+
+</div>
+
+<br/>
+
+<div align="center">
+
+![SQL](https://img.shields.io/badge/SQL-0d1117?style=for-the-badge&logo=mysql&logoColor=4479A1)
 ![Bun](https://img.shields.io/badge/Bun-0d1117?style=for-the-badge&logo=bun&logoColor=FBF0DF)
-![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
-![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
-![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
 ![python-docx](https://img.shields.io/badge/python--docx-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=for-the-badge&logo=pytest&logoColor=0A9EDC)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-0d1117?style=for-the-badge&logo=webassembly&logoColor=654FF0)
+
+</div>
 
 ---
 
 ## <img src="https://cdn.simpleicons.org/github/7EB8F7" width="22"/> Projects
 
 ### 🌐 IT Study Hub
-> Full-stack EdTech platform — led a 4-person team from design to deployment. Zero frameworks. Entirely vanilla JS.
+> A fully deployed EdTech platform where students can learn, run code, and compete — built by a 4-person team from scratch with zero frameworks.
 
 ![HTML](https://img.shields.io/badge/HTML%2FCSS%2FJS-0d1117?style=flat-square&logo=html5&logoColor=E34F26)
 ![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28)
@@ -113,9 +111,9 @@ class AshtidD:
 ![Cloudflare](https://img.shields.io/badge/Cloudflare_DNS-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0d1117?style=flat-square&logo=github&logoColor=white)
 
-- Gamified XP & badge progression system, real-time leaderboard, tiered premium access
-- 8+ subject courses with 25-question quizzes each; in-browser code execution via Monaco + Judge0 CE
-- Firebase Auth for user management; custom SVG assets throughout
+- Students earn XP, unlock badges, and climb a real-time leaderboard — making learning competitive by design
+- 8+ courses, 200+ quiz questions, and a live in-browser code editor (Monaco + Judge0) that runs actual code with zero setup
+- Tiered premium access, Firebase Auth, custom SVG assets — production-grade, not a college project that looks like one
 
 [![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://itstudyhub.dpdns.org)
 
@@ -197,6 +195,12 @@ class AshtidD:
 
 <div align="center">
 
+<!-- Trophies -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=reboot-phoenix&theme=algolia&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+<br/>
+
+<!-- Stats + Languages -->
 <a href="https://github.com/reboot-phoenix">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=reboot-phoenix&show_icons=true&theme=github_dark&hide_border=true&title_color=7EB8F7&icon_color=7EB8F7&text_color=c9d1d9&bg_color=0d1117" />
 </a>
@@ -206,9 +210,16 @@ class AshtidD:
 
 <br/><br/>
 
+<!-- Streak -->
 <a href="https://github.com/reboot-phoenix">
   <img src="https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7" />
 </a>
+
+<br/><br/>
+
+<!-- Activity Graph -->
+[![Ashtid's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=reboot-phoenix&bg_color=0d1117&color=7EB8F7&line=7EB8F7&point=FFFFFF&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 
 </div>
 
