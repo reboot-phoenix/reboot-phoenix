@@ -221,7 +221,7 @@ class AshtidD:
 [![Email](https://img.shields.io/badge/Email-bscit.tiu2012@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:bscit.tiu2012@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-reboot--phoenix.github.io-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=7EB8F7)](https://reboot-phoenix.github.io/portfolio.html)
 [![Website](https://img.shields.io/badge/IT%20Study%20Hub-itstudyhub.dpdns.org-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=a78bfa)](https://itstudyhub.dpdns.org)
-[![LeetCode](https://img.shields.io/badge/LeetCode-just--started--coding-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/just-started-coding)
+[![LeetCode](https://img.shields.io/badge/LeetCode-ashtide-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/ashtide)
 
 </div>
 
