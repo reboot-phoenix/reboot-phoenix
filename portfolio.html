@@ -793,6 +793,127 @@
     @media (prefers-reduced-motion: reduce) {
       .hero-cursor, .hero-badge::before { animation: none; }
     }
+
+    /* ═══ TERMINAL HERO ═══ */
+    .terminal-block {
+      background: #0a0c10;
+      border: 1px solid rgba(126,184,247,0.18);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.8rem 0 1.6rem;
+      max-width: 520px;
+      box-shadow: 0 0 40px rgba(126,184,247,0.06);
+    }
+    .terminal-bar {
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0.55rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .t-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .t-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--muted-2);
+      margin-left: 0.4rem;
+      letter-spacing: 0.04em;
+    }
+    .terminal-body {
+      padding: 1.2rem 1.3rem 1.4rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      line-height: 1.9;
+      min-height: 140px;
+    }
+    .t-line { display: block; }
+    .t-prompt { color: var(--green); }
+    .t-cmd { color: var(--ink); }
+    .t-out { color: var(--muted); }
+    .t-accent { color: var(--accent); }
+    .t-violet { color: var(--violet); }
+    .t-green { color: var(--green); }
+    .t-cursor-inline {
+      display: inline-block;
+      width: 7px; height: 1.1em;
+      background: var(--accent);
+      vertical-align: text-bottom;
+      animation: blink 1.1s step-end infinite;
+      border-radius: 1px;
+      margin-left: 1px;
+    }
+
+    /* ═══ SCROLL REVEAL ═══ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+
+    /* ═══ DSA SECTION ═══ */
+    .dsa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .dsa-stat-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .dsa-stat-box {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      text-align: center;
+    }
+    .dsa-stat-box .val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+    .dsa-stat-box .val .accent { color: var(--accent); }
+    .dsa-stat-box .lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+    .dsa-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.6rem;
+    }
+    .dsa-tag {
+      padding: 0.25rem 0.65rem;
+      background: var(--accent-dim);
+      border: 1px solid rgba(126,184,247,0.18);
+      border-radius: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.67rem;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+    }
   </style>
 </head>
 <body>
@@ -803,6 +924,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#dsa">DSA</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://www.linkedin.com/in/dithsa-dutta" target="_blank">LinkedIn</a></li>
@@ -819,8 +941,19 @@
     <div class="hero-left">
       <div class="hero-label">B.Sc. IT · Techno India University · Kolkata</div>
       <h1>Dithsa Dutta<span class="hero-cursor"></span></h1>
-      <div class="hero-role">Cybersecurity &amp; Python Developer</div>
-      <p class="hero-bio">Third-year IT student specialising in Cloud Technology and Information Security. Currently interning as a Cybersecurity Intern at Uptoskills — conducting real-world vulnerability assessments with Burp Suite Pro. Independently shipped four live products end-to-end.</p>
+      <div class="hero-role">Cybersecurity Intern · Developer · Builder</div>
+
+      <!-- Terminal block — the signature element -->
+      <div class="terminal-block">
+        <div class="terminal-bar">
+          <span class="t-dot" style="background:#ff5f57"></span>
+          <span class="t-dot" style="background:#febc2e"></span>
+          <span class="t-dot" style="background:#28c840"></span>
+          <span class="t-title">ashtid@kali ~ </span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+
       <div class="hero-badge">Available · Open to Opportunities</div>
       <div class="hero-cta" style="margin-top:2rem;">
         <a href="#projects" class="btn-primary">
@@ -841,7 +974,7 @@
     <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-value">9<span class="accent">.</span>64</div>
-        <div class="stat-label">Current GPA</div>
+        <div class="stat-label">GPA · Rank 1</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
@@ -850,13 +983,18 @@
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <div class="stat-value">10<span class="accent">+</span></div>
-        <div class="stat-label">Certifications</div>
+        <div class="stat-value">2</div>
+        <div class="stat-label">Active Internships</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <div class="stat-value">3</div>
-        <div class="stat-label">Forage Sims</div>
+        <div class="stat-value">70<span class="accent">+</span></div>
+        <div class="stat-label">LeetCode Solved</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-value">10<span class="accent">+</span></div>
+        <div class="stat-label">Certifications</div>
       </div>
     </div>
   </div>
@@ -873,22 +1011,38 @@
 
     <div class="about-grid">
 
-      <!-- Internship -->
-      <div class="glass-card" style="grid-column: 1 / -1;">
+      <!-- Internship UptoSkills -->
+      <div class="glass-card reveal" style="grid-column: 1 / -1;">
         <div class="card-label">Current Position</div>
         <div class="card-title">
           Cybersecurity Intern
           <span class="active-badge">Active</span>
         </div>
-        <div class="card-meta">Uptoskills · Jun 2026 – Sep 2026</div>
+        <div class="card-meta">UptoSkills · Jun 2026 – Sep 2026 · Under Vanshika Jadaun &amp; Rudrapratap Singh Bais</div>
         <ul class="card-bullets">
-          <li>Hands-on web application vulnerability assessments using Burp Suite Pro — intercepting, manipulating, and analysing HTTP traffic to identify security flaws across target environments.</li>
-          <li>Executing SQL injection attacks on designated test sites to enumerate databases, extract credentials, and document exploit chains with remediation notes.</li>
+          <li>Web application vulnerability assessments using <strong style="color:var(--ink)">Burp Suite Pro</strong> — intercepting and manipulating live HTTP traffic to surface injection points, auth flaws, and misconfigured headers on real targets.</li>
+          <li><strong style="color:var(--ink)">SQL injection</strong> exploit chains on designated test environments — database enumeration, credential extraction, and full remediation documentation.</li>
+          <li><strong style="color:var(--ink)">Nmap</strong> host discovery, port enumeration, OS and service fingerprinting across live networks; <strong style="color:var(--ink)">Nikto</strong> web scanning against live domains and subdomains — documented Cloudflare WAF behavior causing early error-limit triggering.</li>
+          <li>Formal pentest reports written to professional standard for every assessment task; findings presented in structured viva sessions.</li>
+        </ul>
+      </div>
+
+      <!-- Internship IBM -->
+      <div class="glass-card reveal reveal-delay-1" style="grid-column: 1 / -1;">
+        <div class="card-label">Virtual Programme</div>
+        <div class="card-title">
+          AI &amp; Sustainability Intern
+          <span class="active-badge">Active</span>
+        </div>
+        <div class="card-meta">1M1B × IBM SkillsBuild × AITCE · 2026</div>
+        <ul class="card-bullets">
+          <li>Applying AI tools and IBM SkillsBuild learning pathways to real sustainability challenges within the 1M1B programme framework.</li>
+          <li>Developing competencies in responsible AI, data-driven decision making, and sustainable technology deployment.</li>
         </ul>
       </div>
 
       <!-- Education -->
-      <div class="glass-card">
+      <div class="glass-card reveal reveal-delay-1">
         <div class="card-label">Education</div>
         <div class="card-title">B.Sc. Information Technology</div>
         <div class="card-meta">Techno India University, Kolkata · 2024–2028<br>Cloud Technology &amp; Information Security · Sem 5 of 8</div>
@@ -900,7 +1054,7 @@
       </div>
 
       <!-- Skills -->
-      <div class="glass-card">
+      <div class="glass-card reveal reveal-delay-2">
         <div class="card-label">Technical Skills</div>
         <div class="skills-grid">
           <span class="skill-tag">Python</span>
@@ -938,7 +1092,7 @@
     <div class="projects-list">
 
       <!-- IT Study Hub -->
-      <div class="proj-card">
+      <div class="proj-card reveal">
         <div class="proj-accent-bar"></div>
         <div class="proj-inner">
           <div class="proj-content">
@@ -954,10 +1108,10 @@
               <span class="proj-tag">Cloudflare DNS</span>
               <span class="proj-tag">GitHub Pages</span>
             </div>
-            <p class="proj-desc">Full-stack educational platform — ESD coursework project, led a 4-person team from design to deployment. Zero frameworks, entirely vanilla JS.</p>
+            <p class="proj-desc">A fully deployed EdTech platform where students learn, run code, and compete on a live leaderboard — built by a 4-person team with zero frameworks, from scratch.</p>
             <ul class="proj-bullets">
-              <li>Firebase Auth, gamified XP &amp; badge progression, real-time leaderboard, subject quizzes, and tiered premium access.</li>
-              <li>Deployed on GitHub Pages with Cloudflare DNS; integrated Monaco Editor + Judge0 CE for in-browser code execution.</li>
+              <li>Students earn XP, unlock badges, and climb a real-time leaderboard — making learning competitive by design. Tiered premium access system, Firebase Auth throughout.</li>
+              <li>8+ courses, 200+ quiz questions, and a live in-browser code editor (Monaco + Judge0 CE) that executes real code with zero setup required from the user.</li>
             </ul>
           </div>
           <div class="proj-links">
@@ -986,10 +1140,10 @@
               <span class="proj-tag">Cloudflare Workers</span>
               <span class="proj-tag">Bun</span>
             </div>
-            <p class="proj-desc">Browser-native Python 3.11 IDE via Pyodide (WebAssembly CPython) — zero backend. Interactive <code style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--accent);background:var(--accent-dim);padding:1px 5px;border-radius:3px;">input()</code>, auto-package imports, multi-file tabs.</p>
+            <p class="proj-desc">A full Python 3.11 IDE that runs entirely in your browser — real CPython via WebAssembly, no installs, no backend, no compromise.</p>
             <ul class="proj-bullets">
-              <li>Monaco editor with inline error highlighting; auto-imports for NumPy, Pandas; multi-file tab system.</li>
-              <li>Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys; deployed via Bun + Cloudflare Workers CI/CD.</li>
+              <li>Runs actual CPython compiled to WebAssembly (Pyodide) — not a subset, not a simulator. Monaco editor with inline errors, interactive <code style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--accent);background:var(--accent-dim);padding:1px 5px;border-radius:3px;">input()</code>, NumPy/Pandas auto-imports, multi-file tabs.</li>
+              <li>Built-in AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys. Ships via Bun + Cloudflare Workers CI/CD pipeline.</li>
             </ul>
           </div>
           <div class="proj-links">
@@ -1002,7 +1156,7 @@
       </div>
 
       <!-- GhostTrace -->
-      <div class="proj-card">
+      <div class="proj-card reveal reveal-delay-2">
         <div class="proj-accent-bar"></div>
         <div class="proj-inner">
           <div class="proj-content">
@@ -1018,10 +1172,10 @@
               <span class="proj-tag">LeakCheck</span>
               <span class="proj-tag">HIBP</span>
             </div>
-            <p class="proj-desc">OSINT web app that aggregates a target's digital footprint — attacker recon methodology applied defensively.</p>
+            <p class="proj-desc">OSINT recon tool that maps a target's entire digital footprint — attacker methodology, built to defend.</p>
             <ul class="proj-bullets">
-              <li>Name, email, phone, username search via SerpAPI → Google CSE → DuckDuckGo fallback; breach lookup via LeakCheck &amp; HIBP; Gravatar &amp; social deep-links.</li>
-              <li>0–100 exposure score with animated ring, per-platform profile verification, scan history, and exportable report.</li>
+              <li>Aggregates name, email, phone, and username across SerpAPI → Google CSE → DuckDuckGo; breach lookup via LeakCheck &amp; HIBP; Gravatar &amp; social deep-links.</li>
+              <li>0–100 exposure score with animated risk ring, per-platform profile verification, scan history, and exportable report.</li>
             </ul>
           </div>
           <div class="proj-links">
@@ -1038,7 +1192,7 @@
       </div>
 
       <!-- Python Toolkit -->
-      <div class="proj-card">
+      <div class="proj-card reveal reveal-delay-3">
         <div class="proj-accent-bar"></div>
         <div class="proj-inner">
           <div class="proj-content">
@@ -1052,10 +1206,10 @@
               <span class="proj-tag">PBKDF2-HMAC-SHA256</span>
               <span class="proj-tag">pytest</span>
             </div>
-            <p class="proj-desc">CLI password manager with serious cryptography — OWASP-compliant key derivation, 32 passing tests, nothing stored in plaintext.</p>
+            <p class="proj-desc">A password manager built the way security tools should be — OWASP-compliant, zero plaintext, 32 passing tests, nothing cut corners.</p>
             <ul class="proj-bullets">
-              <li>Fernet AES-128-CBC encryption; master password never stored — PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); salt stored separately from vault.</li>
-              <li>Bundled terminal game (dataclasses) and utility library; full pytest suite (32 tests) validates all modules.</li>
+              <li>PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023) — master password is never stored, not even hashed. Salt lives separately from the vault. Fernet AES-128-CBC throughout.</li>
+              <li>Full pytest suite: <strong style="color:var(--green)">32 tests, all green</strong>. Bundled terminal game and utility library included.</li>
             </ul>
           </div>
           <div class="proj-links">
@@ -1067,6 +1221,54 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- DSA / LEETCODE -->
+<section id="dsa">
+  <div class="outer">
+    <div class="eyebrow">Problem Solving</div>
+    <h2>DSA &amp; Algorithms</h2>
+    <p class="section-sub">Building placement-ready fundamentals — algorithms in C, LeetCode grind in progress.</p>
+
+    <div class="dsa-grid">
+      <div class="glass-card reveal">
+        <div class="card-label">LeetCode</div>
+        <div class="dsa-stat-row">
+          <div class="dsa-stat-box">
+            <div class="val">70<span class="accent">+</span></div>
+            <div class="lbl">Problems Solved</div>
+          </div>
+          <div class="dsa-stat-box">
+            <div class="val" style="color:var(--green);">Easy</div>
+            <div class="lbl">Primary Focus</div>
+          </div>
+        </div>
+        <div class="card-body" style="margin-bottom:0.8rem;">Grinding LeetCode as part of placement prep for TCS, Infosys, and Tech Mahindra. Following NeetCode roadmap after completing CS50x.</div>
+        <a href="https://leetcode.com/ashtide" target="_blank" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--accent);letter-spacing:0.04em;">
+          <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          leetcode.com/ashtide
+        </a>
+      </div>
+
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-label">DSA in C · CS50x</div>
+        <div class="card-body" style="margin-bottom:1rem;">Studied core data structures and algorithms in C through Socratic-style sessions — self-discovering bugs through guided questioning rather than memorising solutions.</div>
+        <div class="dsa-topics">
+          <span class="dsa-tag">Linear Search</span>
+          <span class="dsa-tag">Binary Search</span>
+          <span class="dsa-tag">Bubble Sort</span>
+          <span class="dsa-tag">Insertion Sort</span>
+          <span class="dsa-tag">Selection Sort</span>
+          <span class="dsa-tag">Merge Sort</span>
+          <span class="dsa-tag">Quick Sort</span>
+          <span class="dsa-tag">Recursion</span>
+          <span class="dsa-tag">Pointers &amp; Memory</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1191,7 +1393,7 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
         github.com/reboot-phoenix
       </a>
-      <a href="https://leetcode.com/just-started-coding" target="_blank" class="contact-pill">
+      <a href="https://leetcode.com/ashtide" target="_blank" class="contact-pill">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
         LeetCode
       </a>
@@ -1208,5 +1410,80 @@
   <span>B.Sc. IT · Techno India University · Kolkata, India</span>
 </footer>
 
+<script>
+// ── Terminal animation ──
+(function() {
+  const lines = [
+    { type: 'cmd',  text: 'whoami' },
+    { type: 'out',  text: '<span class="t-green">ashtid</span> · Cybersecurity Intern · Builder' },
+    { type: 'cmd',  text: 'cat internships.txt' },
+    { type: 'out',  text: '<span class="t-accent">↳</span> UptoSkills  — Burp Suite Pro, SQLi, Nmap, Nikto' },
+    { type: 'out',  text: '<span class="t-accent">↳</span> IBM SkillsBuild — AI &amp; Sustainability (Active)' },
+    { type: 'cmd',  text: 'ls projects/' },
+    { type: 'out',  text: '<span class="t-violet">IT-Study-Hub  PyRunner-Apex  GhostTrace  python-toolkit</span>' },
+    { type: 'cmd',  text: 'echo $STATUS' },
+    { type: 'out',  text: '<span class="t-green">AVAILABLE · open to opportunities</span>' },
+  ];
+
+  const body = document.getElementById('terminal-body');
+  let lineIdx = 0, charIdx = 0, phase = 'typing'; // typing | newline | output
+  let currentEl = null;
+  const PROMPT = '<span class="t-prompt">❯</span> ';
+  const DELAY_CHAR = 42, DELAY_CMD_PAUSE = 380, DELAY_OUT = 18, DELAY_NEWLINE = 260;
+
+  function cursor() { return '<span class="t-cursor-inline"></span>'; }
+
+  function nextLine() {
+    if (lineIdx >= lines.length) return;
+    const line = lines[lineIdx];
+    currentEl = document.createElement('span');
+    currentEl.className = 't-line';
+    if (line.type === 'cmd') {
+      currentEl.innerHTML = PROMPT + cursor();
+    } else {
+      currentEl.innerHTML = '';
+    }
+    body.appendChild(currentEl);
+    charIdx = 0;
+    phase = line.type === 'cmd' ? 'typing' : 'output';
+    tick();
+  }
+
+  function tick() {
+    const line = lines[lineIdx];
+    if (phase === 'typing') {
+      const text = line.text;
+      if (charIdx <= text.length) {
+        currentEl.innerHTML = PROMPT + text.slice(0, charIdx) + cursor();
+        charIdx++;
+        setTimeout(tick, DELAY_CHAR);
+      } else {
+        currentEl.innerHTML = PROMPT + text;
+        lineIdx++;
+        setTimeout(nextLine, DELAY_CMD_PAUSE);
+      }
+    } else {
+      // output line — render instantly with short delay
+      setTimeout(() => {
+        currentEl.innerHTML = '<span class="t-out">' + line.text + '</span>';
+        lineIdx++;
+        setTimeout(nextLine, DELAY_NEWLINE);
+        body.scrollTop = body.scrollHeight;
+      }, DELAY_OUT);
+    }
+  }
+
+  setTimeout(nextLine, 600);
+})();
+
+// ── Scroll reveal ──
+(function() {
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+})();
+</script>
 </body>
 </html>
