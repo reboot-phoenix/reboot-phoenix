@@ -120,7 +120,7 @@ class AshtidD:
 ---
 
 ### ⚡ PyRunner Apex
-> Browser-native Python 3.11 IDE powered by WebAssembly. Zero backend. Zero compromise.
+> A full Python 3.11 IDE that runs entirely in your browser — no installs, no backend, no limits.
 
 ![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6)
@@ -129,16 +129,16 @@ class AshtidD:
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020)
 ![Bun](https://img.shields.io/badge/Bun-0d1117?style=flat-square&logo=bun&logoColor=FBF0DF)
 
-- Full Python 3.11 in the browser via CPython compiled to WebAssembly (Pyodide)
-- Monaco editor with inline error highlighting; interactive `input()` support; auto-imports for NumPy & Pandas; multi-file tabs
-- Integrated AI assistant panel (Gemini / ChatGPT / Claude) with user-supplied keys; deployed via Bun + Cloudflare Workers CI/CD
+- Runs CPython compiled to WebAssembly — real Python, not a subset, not a simulation
+- Monaco editor with inline errors, interactive `input()`, NumPy/Pandas auto-imports, and multi-file tabs
+- Built-in AI assistant (Gemini / ChatGPT / Claude) with user-supplied keys; the whole thing ships via Bun + Cloudflare Workers
 
 [![Live](https://img.shields.io/badge/Live-pyrunner--apex.itstudyhub--tiu.workers.dev-7EB8F7?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pyrunner-apex.itstudyhub-tiu.workers.dev)
 
 ---
 
 ### 👻 ghosttrace
-> Silent network recon tool built in Python. Host discovery, tracing, and enumeration.
+> Recon before the target knows you're there — silent host discovery, tracing, and enumeration in pure Python.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 
@@ -148,15 +148,15 @@ class AshtidD:
 ---
 
 ### 🔑 python-toolkit
-> OWASP-compliant CLI password manager. Nothing stored in plaintext. Ever.
+> A password manager built the way security tools should be — OWASP-compliant, zero plaintext, 32 passing tests.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 ![Fernet](https://img.shields.io/badge/Fernet_AES--128--CBC-0d1117?style=flat-square&logo=letsencrypt&logoColor=7EB8F7)
 ![PBKDF2](https://img.shields.io/badge/PBKDF2--HMAC--SHA256-0d1117?style=flat-square&logo=springsecurity&logoColor=5eead4)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=flat-square&logo=pytest&logoColor=0A9EDC)
 
-- PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); master password never stored; salt stored separately from vault
-- **32 passing tests** validating all modules
+- PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023) — your master password is never stored, not even hashed
+- Salt stored separately from the vault; Fernet AES-128-CBC encryption throughout; **32 tests, all green**
 
 [![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fpython--toolkit-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/python-toolkit)
 
@@ -179,15 +179,10 @@ class AshtidD:
 | Area | Certification | Issuer |
 |---|---|---|
 | 🔐 Cybersecurity | Introduction to Cybersecurity | Cisco Networking Academy |
-| 🔐 Cybersecurity | Describe Concepts of Cryptography | Microsoft |
-| 🔐 Cybersecurity | Introduction to Microsoft Security Solutions | Microsoft |
 | 🔐 Cybersecurity | Security, Compliance & Identity Concepts | Microsoft |
+| 🔐 Cybersecurity | Describe Concepts of Cryptography | Microsoft |
 | 💼 Simulation | Cyber Job Simulation | Deloitte (Forage) |
-| 💼 Simulation | Cybersecurity Job Simulation | Mastercard (Forage) |
-| 💼 Simulation | Data Visualisation: Empowering Business with Effective Insights | TCS (Forage) |
 | 💻 Programming | Python Essentials 1 | Cisco Networking Academy |
-| 💻 Data | Data Science & Analytics | HP LIFE |
-| 🎓 Professional | TCS iON Career Edge — Young Professional | Tata Consultancy Services |
 
 ---
 
