@@ -131,9 +131,9 @@ class AshtidD:
 
 - Runs CPython compiled to WebAssembly — real Python, not a subset, not a simulation
 - Monaco editor with inline errors, interactive `input()`, NumPy/Pandas auto-imports, and multi-file tabs
-- Built-in AI assistant (Gemini / ChatGPT / Claude) with user-supplied keys; the whole thing ships via Bun + Cloudflare Workers
+- Built-in AI assistant Gemini with user-supplied keys; the whole thing ships via Bun + Cloudflare Workers
 
-[![Live](https://img.shields.io/badge/Live-pyrunner--apex.itstudyhub--tiu.workers.dev-7EB8F7?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pyrunner-apex.itstudyhub-tiu.workers.dev)
+[![Live](https://img.shields.io/badge/Live-pyrunner--apex.pages.dev-7EB8F7?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pyrunner-apex.pages.dev/)
 
 ---
 
