@@ -28,7 +28,6 @@ class AshtidD:
 
     internships = [
         "Cybersecurity Intern @ UptoSkills (Jun–Sep 2026)",
-        "AI & Sustainability Virtual Intern @ 1M1B × IBM SkillsBuild × AITCE",
     ]
 
     currently   = [
@@ -171,7 +170,6 @@ class AshtidD:
 ### Virtual Internships & Programmes
 | Organisation | Role | Type | Period |
 |---|---|---|---|
-| **1M1B × IBM SkillsBuild × AITCE** | AI & Sustainability | Virtual Programme | Active |
 | **Mastercard · Forage** | Cybersecurity Analyst | Virtual Internship | Mar 2026 |
 | **Deloitte Australia · Forage** | Cyber Security Consultant | Virtual Internship | Mar 2026 |
 | **TCS · Forage** | Data Visualisation Analyst | Virtual Internship | Mar 2026 |
