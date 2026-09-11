@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=Ashtid+D+%E2%80%94+reboot-phoenix;B.Sc.+IT+%7C+Cloud+Technology+%26+Information+Security;Cybersecurity+Intern+%40+UptoSkills;AI+%26+Sustainability+Intern+%40+IBM+SkillsBuild;Rank+1+%7C+9.64+GPA+%7C+Class+Representative;Building+secure+systems+from+the+ground+up.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=Ashtid+D+%E2%80%94+reboot-phoenix;B.Sc.+IT+%7C+Cloud+Technology+%26+Information+Security;Cybersecurity+Intern+%40+UptoSkills;Rank+1+%7C+9.64+GPA+%7C+Class+Representative;Building+secure+systems+from+the+ground+up.)](https://git.io/typing-svg)
 
 </div>
 
@@ -102,25 +102,24 @@ class AshtidD:
 ## <img src="https://cdn.simpleicons.org/github/7EB8F7" width="22"/> Projects
 
 ### 🌐 IT Study Hub
-> A fully deployed EdTech platform where students can learn, run code, and compete — built by a 4-person team from scratch with zero frameworks.
+> A free IT learning platform for CS students — 6 programming courses, skill-level quizzes, a practice IDE, and a study community, all in one place.
 
 ![HTML](https://img.shields.io/badge/HTML%2FCSS%2FJS-0d1117?style=flat-square&logo=html5&logoColor=E34F26)
 ![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28)
 ![Monaco](https://img.shields.io/badge/Monaco_Editor-0d1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC)
-![Judge0](https://img.shields.io/badge/Judge0_CE-0d1117?style=flat-square&logo=codeforces&logoColor=7EB8F7)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare_DNS-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0d1117?style=flat-square&logo=github&logoColor=white)
 
-- Students earn XP, unlock badges, and climb a real-time leaderboard — making learning competitive by design
-- 8+ courses, 200+ quiz questions, and a live in-browser code editor (Monaco + Judge0) that runs actual code with zero setup
-- Tiered premium access, Firebase Auth, custom SVG assets — production-grade, not a college project that looks like one
+- 6 subjects (C, Java, Python, C++, R, JavaScript) each with Beginner, Intermediate & Advanced tiers — 25 MCQs per subject route you to the right level instantly
+- Full in-browser practice IDE with Monaco editor, real code execution across all 6 languages, 70+ problems, and a built-in AI mentor — no installs, no account needed
+- Tiered premium access (₹199–₹999), Firebase Auth, tech blog, file share, and community — production-grade, not a college project that looks like one
 
 [![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://itstudyhub.dpdns.org)
 
 ---
 
 ### ⚡ PyRunner Apex
-> A full Python 3.11 IDE that runs entirely in your browser — no installs, no backend, no limits.
+> A free online Python 3 compiler and editor that runs entirely in your browser — no account, no install, no backend.
 
 ![React](https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6)
@@ -129,18 +128,22 @@ class AshtidD:
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020)
 ![Bun](https://img.shields.io/badge/Bun-0d1117?style=flat-square&logo=bun&logoColor=FBF0DF)
 
-- Runs CPython compiled to WebAssembly — real Python, not a subset, not a simulation
-- Monaco editor with inline errors, interactive `input()`, NumPy/Pandas auto-imports, and multi-file tabs
-- Built-in AI assistant Gemini with user-supplied keys; the whole thing ships via Bun + Cloudflare Workers
+- Runs real CPython 3 via WebAssembly (Pyodide) — not a subset, not transpiled, actual Python with interactive `input()` support
+- Monaco editor with auto package install and multi-AI assistant support — Gemini, ChatGPT, and Claude, user-supplied keys
+- Ships entirely via Bun + Cloudflare Workers; zero backend, zero signup — just open and run
 
 [![Live](https://img.shields.io/badge/Live-pyrunner--apex.pages.dev-7EB8F7?style=for-the-badge&logo=cloudflare&logoColor=white)](https://pyrunner-apex.pages.dev/)
 
 ---
 
 ### 👻 ghosttrace
-> Recon before the target knows you're there — silent host discovery, tracing, and enumeration in pure Python.
+> A digital footprint intelligence platform — surface what the internet knows about a name, email, username, or phone number across 50+ platforms.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
+
+- 4 scan modes: name (with optional filters for college, location, company, job title), username, email, and phone — checks 50+ platforms simultaneously
+- Email mode cross-references breach databases and detects disposable addresses; phone mode queries Truecaller, NumLookup, and Sync.me
+- No data stored, no cookies — recent scans are kept in browser localStorage only and never sent to any server
 
 [![Live](https://img.shields.io/badge/Live-ghosttrace--iy8f.onrender.com-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace-iy8f.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fghosttrace-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/ghosttrace)
@@ -148,15 +151,16 @@ class AshtidD:
 ---
 
 ### 🔑 python-toolkit
-> A password manager built the way security tools should be — OWASP-compliant, zero plaintext, 32 passing tests.
+> A secure password generator and strength checker — runs live in the browser, built on Python 3.12 with AES-128-CBC encryption and 32 passing tests.
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
 ![Fernet](https://img.shields.io/badge/Fernet_AES--128--CBC-0d1117?style=flat-square&logo=letsencrypt&logoColor=7EB8F7)
 ![PBKDF2](https://img.shields.io/badge/PBKDF2--HMAC--SHA256-0d1117?style=flat-square&logo=springsecurity&logoColor=5eead4)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=flat-square&logo=pytest&logoColor=0A9EDC)
 
-- PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023) — your master password is never stored, not even hashed
-- Salt stored separately from the vault; Fernet AES-128-CBC encryption throughout; **32 tests, all green**
+- Generate passwords up to any length with full control — uppercase, lowercase, numbers, symbols, and ambiguous character exclusion
+- Real-time strength checker validates against length, character variety, and symbol presence — instant feedback as you type
+- Fernet AES-128-CBC encryption throughout, PBKDF2-HMAC-SHA256 at 480k iterations (OWASP 2023); **32 tests, all green**
 
 [![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fpython--toolkit-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/python-toolkit)
 
@@ -190,10 +194,7 @@ class AshtidD:
 
 <div align="center">
 
-<!-- Trophies -->
-[![trophy](https://github-profile-trophy.vercel.app/?username=reboot-phoenix&theme=algolia&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
-<br/>
 
 <!-- Stats + Languages -->
 <a href="https://github.com/reboot-phoenix">
@@ -210,10 +211,7 @@ class AshtidD:
   <img src="https://streak-stats.demolab.com?user=reboot-phoenix&theme=github-dark-blue&hide_border=true&ring=7EB8F7&fire=7EB8F7&currStreakLabel=7EB8F7" />
 </a>
 
-<br/><br/>
 
-<!-- Activity Graph -->
-[![Ashtid's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=reboot-phoenix&bg_color=0d1117&color=7EB8F7&line=7EB8F7&point=FFFFFF&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 
 </div>
@@ -225,6 +223,7 @@ class AshtidD:
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-bscit.tiu2012@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:bscit.tiu2012@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ashtid--d-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://linkedin.com/in/ashtid-d)
 [![Portfolio](https://img.shields.io/badge/Portfolio-reboot--phoenix.github.io-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=7EB8F7)](https://reboot-phoenix.github.io/portfolio.html)
 [![Website](https://img.shields.io/badge/IT%20Study%20Hub-itstudyhub.dpdns.org-0d1117?style=for-the-badge&logo=firefoxbrowser&logoColor=a78bfa)](https://itstudyhub.dpdns.org)
 [![LeetCode](https://img.shields.io/badge/LeetCode-ashtide-0d1117?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/ashtide)
