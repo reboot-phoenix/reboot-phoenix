@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=Ashtid+D+%E2%80%94+reboot-phoenix;B.Sc.+IT+%7C+Cloud+Technology+%26+Information+Security;Cybersecurity+Intern+%40+UptoSkills;Rank+1+%7C+9.64+GPA+%7C+Class+Representative;Building+secure+systems+from+the+ground+up.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3500&pause=1000&color=7EB8F7&center=true&vCenter=true&width=750&lines=Ashtid+D+%E2%80%94+reboot-phoenix;B.Sc.+IT+%7C+Cloud+Technology+%26+Information+Security;AI+Product+Engineer+%28Jr.+Team+Lead%29+%40+UptoSkills;Cybersecurity+Intern+%40+UptoSkills;1st+Runner-Up+%E2%80%94+IIT+Bombay+E-Cell;Rank+1+%7C+9.64+GPA+%7C+Class+Representative;Building+secure+systems+from+the+ground+up.)](https://git.io/typing-svg)
 
 </div>
 
@@ -8,9 +8,9 @@
 
 <div align="center">
 
-| 🎓 GPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships |
-|:---:|:---:|:---:|:---:|
-| **9.64 / 10** | **4** | **10+** | **2 Active** |
+| 🎓 GPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships | 🏆 Awards |
+|:---:|:---:|:---:|:---:|:---:|
+| **9.64 / 10** | **4** | **10+** | **2 Active** | **IIT Bombay E-Cell** |
 
 </div>
 
@@ -27,12 +27,19 @@ class AshtidD:
     standing    = "9.64 GPA · Rank 1 in class · Class Representative"
 
     internships = [
+        "AI Product Engineer Intern (Jr. Team Lead) @ UptoSkills (Sep 2026–Present)",
         "Cybersecurity Intern @ UptoSkills (Jun–Sep 2026)",
     ]
 
+    awards      = [
+        "1st Runner-Up — Idea Ignition 2.0, IIT Bombay E-Cell (Aug 2026)",
+    ]
+
     currently   = [
-        "web app pentesting — Burp Suite Pro, SQLi, HTTP traffic analysis",
-        "network recon — Nmap + Nikto on live targets, WAF fingerprinting",
+        "backend engineering — FastAPI, PostgreSQL, Redis, Docker, RAG pipelines",
+        "jr. team lead — triaging issues, reviewing PRs, coordinating backend stack",
+        "web app pentesting — Burp Suite Pro, OWASP ZAP, SQLi, HTTP traffic analysis",
+        "network recon — Nmap + Nikto + Nuclei on live targets, WAF fingerprinting",
         "cloud deployments — Cloudflare Workers, Firebase, GitHub Pages CI/CD",
         "shipping live products end-to-end — 4 deployed, more incoming",
         "grinding DSA in C + CS50x",
@@ -41,24 +48,44 @@ class AshtidD:
 
 ---
 
+## <img src="https://cdn.simpleicons.org/fastapi/009688" width="22"/> AI Product Engineering
+
+> Building production backend systems. Junior Team Lead, shipping real features.
+
+**AI Product Engineer Intern — Junior Team Lead @ UptoSkills** *(Sep 2026 – Present)*
+- Junior Team Lead — triaging issues, reviewing & merging PRs, coordinating debugging across the backend stack
+- Building backend features in **Python (FastAPI)**; **PostgreSQL** for data collection, storage & export; **Redis** for caching; **Docker** for containerised services
+- Integrating **RAG pipeline** architecture to power AI features within the product; operating in a real CI/CD workflow
+
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=4169E1)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=for-the-badge&logo=redis&logoColor=DC382D)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
+
+`RAG Pipelines` · `FastAPI` · `PostgreSQL` · `Redis` · `Docker` · `CI/CD` · `PR Reviews` · `Team Lead`
+
+---
+
 ## <img src="https://cdn.simpleicons.org/hackthebox/7EB8F7" width="22"/> Cybersecurity
 
 > Real pentesting. Real targets. Not CTFs, not sandboxes.
 
-**@ UptoSkills — Active Internship**
-- Web app vulnerability assessments using **Burp Suite Pro** — intercepting, manipulating & analysing live HTTP traffic
-- **SQL injection** exploit chains on designated test environments — database enumeration, credential extraction, remediation docs
-- **Nmap** host discovery, port enumeration, OS & service fingerprinting across live networks
-- **Nikto** web scanning against live domains and subdomains; documented Cloudflare WAF behavior triggering early error-limits
-- Formal pentest reports written to professional standard for every assessment task
+**Cybersecurity Intern @ UptoSkills** *(Jun 2026 – Sep 2026)*
+- Web application security assessments using **Burp Suite Pro** and **OWASP ZAP** — intercepting, manipulating & analysing live HTTP traffic; identifying injection points, misconfigurations, and OWASP Top 10 vulnerabilities
+- **SQL injection** exploit chains (PortSwigger Academy + live targets) — database enumeration, credential extraction, remediation docs
+- Network recon via **Nmap**, **Amass**, **theHarvester**, **Gobuster**, **FFUF**; web scanning via **Nikto** & **Wapiti**; automated scanning via **Nuclei**; exploitation via **Metasploit**; credential attacks via **Hydra**
+- Documented Cloudflare WAF behaviour triggering early error-limits; formal pentest reports written to professional standard for every assessment task
 
 ![Burp Suite Pro](https://img.shields.io/badge/Burp_Suite_Pro-0d1117?style=for-the-badge&logo=portswigger&logoColor=FF6633)
+![OWASP ZAP](https://img.shields.io/badge/OWASP_ZAP-0d1117?style=for-the-badge&logo=owasp&logoColor=7EB8F7)
 ![Nmap](https://img.shields.io/badge/Nmap-0d1117?style=for-the-badge&logo=nmap&logoColor=7EB8F7)
-![Nikto](https://img.shields.io/badge/Nikto-0d1117?style=for-the-badge&logo=linux&logoColor=7EB8F7)
+![Metasploit](https://img.shields.io/badge/Metasploit-0d1117?style=for-the-badge&logo=metasploit&logoColor=2596CD)
+![Nuclei](https://img.shields.io/badge/Nuclei-0d1117?style=for-the-badge&logo=linux&logoColor=7EB8F7)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-0d1117?style=for-the-badge&logo=kalilinux&logoColor=557C94)
 ![Wireshark](https://img.shields.io/badge/Wireshark-0d1117?style=for-the-badge&logo=wireshark&logoColor=1679A7)
 
-`SQL Injection` · `OSINT` · `WAF fingerprinting` · `HTTP traffic analysis` · `Recon methodology` · `Pentest report writing`
+`SQL Injection` · `OWASP Top 10` · `OSINT` · `WAF fingerprinting` · `HTTP traffic analysis` · `Recon methodology` · `Pentest report writing` · `Nuclei` · `Metasploit` · `Hydra` · `Amass` · `FFUF` · `Gobuster`
 
 ---
 
@@ -80,7 +107,7 @@ class AshtidD:
 
 <div align="center">
 
-[![My Skills](https://skillicons.dev/icons?i=py,js,ts,java,c,html,css,react,nodejs,git,linux,bash,firebase,cloudflare,vscode&theme=dark&perline=8)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=py,js,ts,java,c,html,css,react,nodejs,fastapi,postgres,redis,docker,git,linux,bash,firebase,cloudflare,vscode&theme=dark&perline=8)](https://skillicons.dev)
 
 </div>
 
@@ -93,6 +120,9 @@ class AshtidD:
 ![python-docx](https://img.shields.io/badge/python--docx-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
 ![pytest](https://img.shields.io/badge/pytest-0d1117?style=for-the-badge&logo=pytest&logoColor=0A9EDC)
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-0d1117?style=for-the-badge&logo=webassembly&logoColor=654FF0)
+![RAG](https://img.shields.io/badge/RAG_Pipelines-0d1117?style=for-the-badge&logo=openai&logoColor=7EB8F7)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-0d1117?style=for-the-badge&logo=openai&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_API-0d1117?style=for-the-badge&logo=google&logoColor=4285F4)
 
 </div>
 
@@ -101,17 +131,18 @@ class AshtidD:
 ## <img src="https://cdn.simpleicons.org/github/7EB8F7" width="22"/> Projects
 
 ### 🌐 IT Study Hub
-> A free IT learning platform for CS students — 6 programming courses, skill-level quizzes, a practice IDE, and a study community, all in one place.
+> A free IT learning platform for CS students — 6 programming courses, skill-level quizzes, a practice IDE, and a study community, all in one place. **1st Runner-Up, Idea Ignition 2.0 — IIT Bombay E-Cell (Aug 2026).**
 
 ![HTML](https://img.shields.io/badge/HTML%2FCSS%2FJS-0d1117?style=flat-square&logo=html5&logoColor=E34F26)
 ![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=FFCA28)
 ![Monaco](https://img.shields.io/badge/Monaco_Editor-0d1117?style=flat-square&logo=visualstudiocode&logoColor=007ACC)
+![Judge0](https://img.shields.io/badge/Judge0_CE-0d1117?style=flat-square&logo=linux&logoColor=7EB8F7)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare_DNS-0d1117?style=flat-square&logo=cloudflare&logoColor=F38020)
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0d1117?style=flat-square&logo=github&logoColor=white)
 
-- 6 subjects (C, Java, Python, C++, R, JavaScript) each with Beginner, Intermediate & Advanced tiers — 25 MCQs per subject route you to the right level instantly
-- Full in-browser practice IDE with Monaco editor, real code execution across all 6 languages, 70+ problems, and a built-in AI mentor — no installs, no account needed
-- Tiered premium access (₹199–₹999), Firebase Auth, tech blog, file share, and community — production-grade, not a college project that looks like one
+- Led a 4-person team — **365 active users**, 24.97k page views in 7 days; 6 subjects (C, Java, Python, C++, R, JavaScript) each with Beginner, Intermediate & Advanced tiers — 25 MCQs per subject route you to the right level instantly
+- Full in-browser practice IDE with Monaco editor + **Judge0 CE** for real code execution across all 6 languages, 70+ problems, and a built-in AI mentor — no installs, no account needed
+- Gamification engine (XP, badges, leaderboard), Firebase Auth with role-based premium tiers (₹199–₹999), tech blog, file share, and community — production-grade, not a college project that looks like one
 
 [![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://itstudyhub.dpdns.org)
 
@@ -167,6 +198,12 @@ class AshtidD:
 
 ## <img src="https://cdn.simpleicons.org/linkedin/a78bfa" width="22"/> Experience
 
+### Active Internships
+| Organisation | Role | Period |
+|---|---|---|
+| **UptoSkills** | AI Product Engineer Intern *(Junior Team Lead)* | Sep 2026 – Present |
+| **UptoSkills** | Cybersecurity Intern | Jun 2026 – Sep 2026 |
+
 ### Virtual Internships & Programmes
 | Organisation | Role | Type | Period |
 |---|---|---|---|
@@ -183,8 +220,18 @@ class AshtidD:
 | 🔐 Cybersecurity | Introduction to Cybersecurity | Cisco Networking Academy |
 | 🔐 Cybersecurity | Security, Compliance & Identity Concepts | Microsoft |
 | 🔐 Cybersecurity | Describe Concepts of Cryptography | Microsoft |
+| 🔐 Cybersecurity | Intro to Microsoft Security Solutions | Microsoft |
 | 💼 Simulation | Cyber Job Simulation | Deloitte (Forage) |
 | 💻 Programming | Python Essentials 1 | Cisco Networking Academy |
+| 🎓 Professional | iON Career Edge — Young Professional | TCS |
+
+---
+
+## 🏆 Recognition
+
+| Award | Event | Organiser | Date |
+|---|---|---|---|
+| **1st Runner-Up** | Idea Ignition 2.0 — National Startup Pitch | Futurepreneurs E-Cell / NEC / IIT Bombay E-Cell | Aug 2026 |
 
 ---
 
