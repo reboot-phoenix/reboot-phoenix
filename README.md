@@ -23,7 +23,7 @@ class AshtidD:
     alias       = "reboot-phoenix"
     location    = "India 🇮🇳"
     education   = "B.Sc. IT — Cloud Technology & Information Security"
-                  # Techno India University · Final Years
+                  # Techno India University · Pre-Final Year
     standing    = "9.7 CGPA · Rank 1 in class · Class Representative"
 
     internships = [
@@ -49,7 +49,7 @@ class AshtidD:
 
 ## <img src="https://cdn.simpleicons.org/fastapi/009688" width="22"/> AI Product Engineering
 
-> Building production backend systems. Junior Team Lead, shipping real features.
+> Building production backend systems. Associate Team Lead, shipping real features.
 
 **AI Product Engineer Intern — Associate Team Lead @ UptoSkills** *(Sep 2026 – Present)*
 - Associate Team Lead — triaging issues, reviewing & merging PRs, coordinating debugging across the backend stack
@@ -143,7 +143,7 @@ class AshtidD:
 - Full in-browser practice IDE with Monaco editor + **Judge0 CE** for real code execution across all 6 languages, 70+ problems, and a built-in AI mentor — no installs, no account needed
 - Gamification engine (XP, badges, leaderboard), Firebase Auth with role-based premium tiers (₹199–₹999), tech blog, file share, and community — production-grade, not a college project that looks like one
 
-[![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://itstudyhub.dpdns.org)
+[![Live](https://img.shields.io/badge/Live-itstudyhub.dpdns.org-7EB8F7?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://demo.itstudyhub.dpdns.org)
 
 ---
 
@@ -174,7 +174,7 @@ class AshtidD:
 - Email mode cross-references breach databases and detects disposable addresses; phone mode queries Truecaller, NumLookup, and Sync.me
 - No data stored, no cookies — recent scans are kept in browser localStorage only and never sent to any server
 
-[![Live](https://img.shields.io/badge/Live-ghosttrace--iy8f.onrender.com-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace.up.railway.app)
+[![Live](https://img.shields.io/badge/Live-ghosttrace.up.railway.app-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace.up.railway.app)
 [![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fghosttrace-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/ghosttrace)
 
 ---
