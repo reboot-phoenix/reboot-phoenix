@@ -8,9 +8,9 @@
 
 <div align="center">
 
-| 🎓 GPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships | 🏆 Awards |
+| 🎓 CGPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships | 🏆 Awards |
 |:---:|:---:|:---:|:---:|:---:|
-| **9.64 / 10** | **4** | **10+** | **2 Active** | **IIT Bombay E-Cell** |
+| **9.7 / 10** | **4** | **10+** | **2 Active** | **IIT Bombay E-Cell** |
 
 </div>
 
@@ -24,7 +24,7 @@ class AshtidD:
     location    = "India 🇮🇳"
     education   = "B.Sc. IT — Cloud Technology & Information Security"
                   # Techno India University · Final Years
-    standing    = "9.64 GPA · Rank 1 in class · Class Representative"
+    standing    = "9.7 CGPA · Rank 1 in class · Class Representative"
 
     internships = [
         "AI Product Engineer Intern (Jr. Team Lead) @ UptoSkills (Sep 2026–Present)",
@@ -41,8 +41,7 @@ class AshtidD:
         "web app pentesting — Burp Suite Pro, OWASP ZAP, SQLi, HTTP traffic analysis",
         "network recon — Nmap + Nikto + Nuclei on live targets, WAF fingerprinting",
         "cloud deployments — Cloudflare Workers, Firebase, GitHub Pages CI/CD",
-        "shipping live products end-to-end — 4 deployed, more incoming",
-        "grinding DSA in C + CS50x",
+        "shipping live products end-to-end — 4 deployed, more incoming"
     ]
 ```
 
