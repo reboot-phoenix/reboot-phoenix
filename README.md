@@ -174,7 +174,7 @@ class AshtidD:
 - Email mode cross-references breach databases and detects disposable addresses; phone mode queries Truecaller, NumLookup, and Sync.me
 - No data stored, no cookies — recent scans are kept in browser localStorage only and never sent to any server
 
-[![Live](https://img.shields.io/badge/Live-ghosttrace--iy8f.onrender.com-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace-iy8f.onrender.com)
+[![Live](https://img.shields.io/badge/Live-ghosttrace--iy8f.onrender.com-5eead4?style=for-the-badge&logo=render&logoColor=white)](https://ghosttrace.up.railway.app)
 [![GitHub](https://img.shields.io/badge/GitHub-reboot--phoenix%2Fghosttrace-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/reboot-phoenix/ghosttrace)
 
 ---
