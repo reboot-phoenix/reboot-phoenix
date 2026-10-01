@@ -10,7 +10,7 @@
 
 | 🎓 CGPA | 🚀 Live Projects | 📜 Certifications | 🏢 Internships | 🏆 Awards |
 |:---:|:---:|:---:|:---:|:---:|
-| **9.7 / 10** | **4** | **10+** | **2 Active** | **IIT Bombay E-Cell** |
+| **9.7** | **4** | **10+** | **2 Active** | **IIT Bombay E-Cell** |
 
 </div>
 
@@ -27,7 +27,7 @@ class AshtidD:
     standing    = "9.7 CGPA · Rank 1 in class · Class Representative"
 
     internships = [
-        "AI Product Engineer Intern (Jr. Team Lead) @ UptoSkills (Sep 2026–Present)",
+        "AI Product Engineer Intern (Associate Team Lead) @ UptoSkills (Sep 2026–Present)",
         "Cybersecurity Intern @ UptoSkills (Jun–Sep 2026)",
     ]
 
@@ -51,8 +51,8 @@ class AshtidD:
 
 > Building production backend systems. Junior Team Lead, shipping real features.
 
-**AI Product Engineer Intern — Junior Team Lead @ UptoSkills** *(Sep 2026 – Present)*
-- Junior Team Lead — triaging issues, reviewing & merging PRs, coordinating debugging across the backend stack
+**AI Product Engineer Intern — Associate Team Lead @ UptoSkills** *(Sep 2026 – Present)*
+- Associate Team Lead — triaging issues, reviewing & merging PRs, coordinating debugging across the backend stack
 - Building backend features in **Python (FastAPI)**; **PostgreSQL** for data collection, storage & export; **Redis** for caching; **Docker** for containerised services
 - Integrating **RAG pipeline** architecture to power AI features within the product; operating in a real CI/CD workflow
 
