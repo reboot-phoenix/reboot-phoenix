@@ -37,7 +37,7 @@ class AshtidD:
 
     currently   = [
         "backend engineering — FastAPI, PostgreSQL, Redis, Docker, RAG pipelines",
-        "jr. team lead — triaging issues, reviewing PRs, coordinating backend stack",
+        "associate team lead — triaging issues, reviewing PRs, coordinating backend stack",
         "web app pentesting — Burp Suite Pro, OWASP ZAP, SQLi, HTTP traffic analysis",
         "network recon — Nmap + Nikto + Nuclei on live targets, WAF fingerprinting",
         "cloud deployments — Cloudflare Workers, Firebase, GitHub Pages CI/CD",
@@ -200,7 +200,7 @@ class AshtidD:
 ### Active Internships
 | Organisation | Role | Period |
 |---|---|---|
-| **UptoSkills** | AI Product Engineer Intern *(Junior Team Lead)* | Sep 2026 – Present |
+| **UptoSkills** | AI Product Engineer Intern *(Associate Team Lead)* | Sep 2026 – Present |
 | **UptoSkills** | Cybersecurity Intern | Jun 2026 – Sep 2026 |
 
 ### Virtual Internships & Programmes
