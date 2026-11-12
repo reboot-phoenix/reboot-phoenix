@@ -21,6 +21,8 @@ class AshtidD:
         "web app security — Burp Suite Pro, OWASP ZAP, Nmap, Nuclei",
         "shipping live products end-to-end — 4 deployed, more incoming",
     ]
+
+    open_to     = "entry-level cybersecurity roles — SOC analyst · security analyst"
 ```
 
 ---
@@ -33,10 +35,10 @@ class AshtidD:
 
 **Cybersecurity Intern @ UptoSkills** *(Jun 2026 – Sep 2026)*
 - Authorised web application security assessments with **Burp Suite Pro** and **OWASP ZAP** — traffic interception and analysis, injection points, misconfigurations, OWASP Top 10 findings
-- SQL injection exploit chains (PortSwigger Academy and authorised targets) with remediation docs; recon and scanning with **Nmap**, **Amass**, **FFUF**, **Nikto** and **Nuclei**
-- Formal pentest report written for every assessment task
+- SQL injection exploit chains (PortSwigger Academy and authorised targets) with remediation docs; recon and scanning with **Nmap**, **Amass**, **FFUF**, **Nikto**, **Nuclei**, **Gobuster** and **Wapiti**; credential and exploitation exercises with **Hydra** and **Metasploit**
+- 15 assessment tasks, each with a formal pentest report — compiled into a 257-page final report
 
-**Virtual internships (Forage, Mar 2026):** Mastercard · Cybersecurity Analyst, Deloitte Australia · Cyber Security Consultant, TCS · Data Visualisation Analyst
+**Virtual internships (Forage, Mar 2026):** Mastercard (Cybersecurity Analyst) · Deloitte Australia (Cyber Security Consultant) · TCS (Data Visualisation Analyst)
 
 ---
 
@@ -91,6 +93,7 @@ class AshtidD:
 
 **Also built:**
 - 🔑 [**python-toolkit**](https://github.com/reboot-phoenix/python-toolkit) — password generator and strength checker; Fernet AES-128-CBC, PBKDF2-HMAC-SHA256 at 480k iterations, 32 passing tests
+- 🛠️ **DEVFIX** — single-file, rule-based developer error analyzer (no backend, no API); special mention at the GFG Campus TIU GitHub Build Battle
 - 📖 **Lore** *(capstone blueprint, not built)* — AI app that turns what you read and watch into a personal fictional world; Module 4 capstone of the Jio Institute AI Foundation Course
 
 ---
